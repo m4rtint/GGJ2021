@@ -36,12 +36,12 @@ namespace GameJamCat
             _dialougeBoxTransform = transform.parent.GetComponent<RectTransform>();
         }
 
-        public void SetCatNameInDialougeBox(string catName)
+        public void SetCatNameInDialogueBox(string catName)
         {
             _catNameTextMeshPro.text = catName;
         }
 
-        public void ResetCatDialougeBox()
+        public void ResetCatDialogueBox()
         {
             _catNameTextMeshPro.text = "?????";
         }
