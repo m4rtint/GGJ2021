@@ -19,7 +19,7 @@ namespace GameJamCat
             SetTimeUI(time);
         }
 
-        public void CleanUp()
+        private void CleanUp()
         {
             SetTimeUI(0f);
         }

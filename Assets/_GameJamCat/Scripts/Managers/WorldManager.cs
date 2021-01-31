@@ -54,7 +54,10 @@ namespace GameJamCat
         {
             if (_hasTimerRunOut)
             {
-                return;
+                if (_stateManager.GetState() != State.EndGame)
+                {
+                    _stateManager.SetState(State.EndGame);
+                }
             }
 
             _currentTime += Time.deltaTime;
