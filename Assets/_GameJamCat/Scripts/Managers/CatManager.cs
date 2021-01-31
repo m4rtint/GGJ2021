@@ -54,7 +54,7 @@ namespace GameJamCat
             }
 
             _chosenCatToFind = Utilities.GetRandom(_activeCats);
-            
+            _chosenCatToFind.SetupCamera();
             if (OnGeneratedSelectedCatToFind != null)
             {
                 OnGeneratedSelectedCatToFind(_chosenCatToFind);

@@ -34,9 +34,9 @@ namespace GameJamCat
             }
         }
 
-        public void SetTargetCat(CatCustomisation catCustomisation)
+        public void SetTargetCat(CatCustomisation catCustomisation, Texture2D catImage = null)
         {
-            _dossierMenuView?.SetNewCat(catCustomisation);
+            _dossierMenuView?.SetNewCat(catCustomisation, catImage);
         }
 
         public void Initialize()
