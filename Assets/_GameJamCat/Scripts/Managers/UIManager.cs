@@ -6,20 +6,17 @@ namespace GameJamCat
     public class UIManager : MonoBehaviour
     {
         private readonly IStateManager _stateManager = StateManager.Instance;
-
+        
         [SerializeField] private DossierViewBehaviour _dossierView = null;
         [SerializeField] private ScreenTransitionViewBehaviour _transitionViewBehaviour = null;
-        [SerializeField] private TimerUI _timer = null;
         [SerializeField] private EndGameMenu _endgameViewBehaviour = null;
         [SerializeField] private GameObject _crossHair = null;
-
-        private float _maxTime = 0f;
-        public event Action OnTimerRanOut;
-
+        [SerializeField] private LivesViewBehaviour _livesView = null;
+        
         /// <summary>
         /// Initialize UIManager, setup values here
         /// </summary>
-        public void Initialize(float maxTime)
+        public void Initialize(int lives)
         {
             if (_dossierView != null)
             {
@@ -44,25 +41,7 @@ namespace GameJamCat
                 _crossHair.gameObject.SetActive(false);
             }
 
-            if (_timer != null)
-            {
-                _timer.Initialize(maxTime);
-            }
-
-            _maxTime = maxTime;
-        }
-
-        public void UpdateTimer(float currentTime)
-        {
-            if (_timer != null)
-            {
-                _timer.UpdateTime(currentTime);
-
-                if (currentTime > _maxTime)
-                {
-                    OnTimerRanOut?.Invoke();
-                }
-            }
+            SetLives(lives);
         }
 
         /// <summary>
@@ -75,10 +54,13 @@ namespace GameJamCat
             {
                 _transitionViewBehaviour.OnCompleteFade -= HandleOnFadeComplete;
             }
+        }
 
-            if (_timer != null)
+        public void SetLives(int lives)
+        {
+            if (_livesView != null)
             {
-                _timer.CleanUp();
+                _livesView.SetLiveImage(lives);
             }
         }
 
@@ -130,6 +112,7 @@ namespace GameJamCat
                     OnPregameSet();
                     break;
                 case State.Play:
+                    SetCrossHairState(true);
                     break;
                 case State.Dialogue:
                     OnDialogueSet();

@@ -14,12 +14,19 @@ namespace GameJamCat
         [Title("Managers")] 
         [SerializeField] private PlayerController _playerController = null;
         [SerializeField] private CatManager _catManager = null;
+        [SerializeField] private TimeManager _timeManager = null;
         [SerializeField] private UIManager _uiManager = null;
-        
-        //TimeManagement
-        private const float MaxTime = 120f;
-        private float _currentTime = 0f;
 
+        public int Lives
+        {
+            get => _lives;
+            set
+            {
+                _lives = value;
+                _uiManager.SetLives(value);
+            }
+        }
+        
         private void OnEnable()
         {
             if (_catManager != null)
@@ -30,24 +37,18 @@ namespace GameJamCat
 
             if (_uiManager != null)
             {
-                _uiManager.Initialize(MaxTime);
-                _uiManager.OnTimerRanOut += HandleTimerRunningOut;
+                _uiManager.Initialize(Lives);
+            }
+
+            if (_timeManager != null)
+            {
+                _timeManager.Initialize();
             }
         }
 
         private void Start()
         {
             _stateManager.SetState(State.Pregame);
-        }
-
-        private void Update()
-        {
-            _currentTime += Time.deltaTime;
-
-            if (_uiManager != null)
-            {
-                _uiManager.UpdateTimer(_currentTime);
-            }
         }
 
         private void OnDisable()
@@ -61,21 +62,19 @@ namespace GameJamCat
             if (_uiManager != null)
             {
                 _uiManager.CleanUp();
-                _uiManager.OnTimerRanOut -= HandleTimerRunningOut;
+            }
+
+            if (_timeManager != null)
+            {
+                _timeManager.CleanUp();
             }
         }
-        
+
         #region delegate
         private void HandleOnGeneratedSelectedCatToFind(CatBehaviour cat)
         {
             // TODO - update dossier
         }
-
-        private void HandleTimerRunningOut()
-        {
-            // _stateManager.SetState(State.EndGame);
-        }
-
         #endregion
     }
 }
