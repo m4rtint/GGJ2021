@@ -7,9 +7,16 @@ namespace GameJamCat
     /// <summary>
     /// This serves as a runtime replacement for the CSV
     /// </summary>
+    [CreateAssetMenu]
     public class DialogueOptions : ScriptableObject
     {
+#if UNITY_EDITOR
+        [SerializeField] private string _pathToCSV;
+#endif
+        public List<CatCustomisation> _catCustomizationOptions;
+
         
+
     }
 
     [System.Serializable]
@@ -17,10 +24,11 @@ namespace GameJamCat
     {
         public string _catName;
         public string _catNameAnswer;
-        public string _catActivityAnswer;
         public string _catFoodAnswer;
+        public string _catActivityAnswer;
         public Food _food;
         public Toy _toy;
+        public string _flavourText;
     }
 
     public enum Food
