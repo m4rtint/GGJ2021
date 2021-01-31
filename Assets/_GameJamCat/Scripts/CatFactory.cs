@@ -72,9 +72,17 @@ namespace GameJamCat
                 Destroy(cat.gameObject);
                 return;
             }
-            if (_pool == null) CreatePool();
-            cat.gameObject.SetActive(false);
-            _pool.Add(cat);
+
+            if (_pool == null)
+            {
+                CreatePool();
+            }
+
+            if (cat != null)
+            {
+                cat.gameObject.SetActive(false);
+                _pool.Add(cat);
+            }
         }
 
         private void SetupCatMaterial(Material m)
