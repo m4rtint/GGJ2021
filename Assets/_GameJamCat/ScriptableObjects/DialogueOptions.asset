@@ -147,3 +147,43 @@ MonoBehaviour:
     _food: 3
     _toy: 0
     _flavourText: 
+  - _catName: Chuck Meowbagge
+    _catNameAnswer: Are you one of those dang musicians playing at the odd hours
+      of NOON?!? Oh you're not? Goodness sorry about that, I'm Chuck Meowbagge, inventor,
+      complainer, and the pawsitively the most handsome cat around!
+    _catFoodAnswer: All good meals come from the sea, don't you know? I'm sure Captain
+      Nemeow would agree with me. As such I do prefer tuna most of all.
+    _catActivityAnswer: 'Surely you must know that a machine will surpass our limits
+      of intellect. As such, I am determined to make this cardboard box THINK! '
+    _food: 0
+    _toy: 2
+    _flavourText: 
+  - _catName: Captain Nemeow
+    _catNameAnswer: 'Hip hip, glad to see you''ve got your land legs working there
+      chap. You can call me Captain Nemeow, I''m the proprietor of the supermarine
+      home that I call this cat body. '
+    _catFoodAnswer: Everything you need comes from the sea. Oh you say that we're
+      not situated in the marine environment right now? Trivialities good sir! For
+      land is just a solid form of the ocean. That said, would you mind fetching
+      me some salmon? Tis my favourite.
+    _catActivityAnswer: Science is the truest endevour of our time. Science with
+      a capital S. That is to say, all things have already been settled and there's
+      no need to investigate anything further. What? What has Karl Poppeow been telling
+      you? Falsifiability? Sounds like a ludicrious idea. And it's not already apart
+      of my dogmatic framework! Well, matters aside, I find lasers really neat.
+    _food: 1
+    _toy: 7
+    _flavourText: 
+  - _catName: Karl Poppeow
+    _catNameAnswer: 'The confidence you may place in what I am called can be determined
+      by this: my name is Karl Poppeow'
+    _catFoodAnswer: My favourite food could be defined as an evolution of taste.
+      This darwinian path crosses from bit to nibs, then arrives at the manifestation
+      of kibble
+    _catActivityAnswer: I've been on a quest to find the strongest catnip. I know
+      its out there, but all I can do is find stronger cat nip. Eventually I might
+      find stronger catnip, and then I'll know that the last one wasn't the stongest
+      catnip, but I can never know that I've got the stongest catnip right now.
+    _food: 6
+    _toy: 4
+    _flavourText: 
