@@ -90,7 +90,7 @@ namespace GameJamCat
         #region delegate
         private void HandleOnGeneratedSelectedCatToFind(CatBehaviour cat)
         {
-            // TODO - update dossier
+            _uiManager.SetUpDossier(cat);
         }
         #endregion
     }
