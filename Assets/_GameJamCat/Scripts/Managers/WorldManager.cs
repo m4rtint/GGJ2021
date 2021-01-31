@@ -14,7 +14,6 @@ namespace GameJamCat
         [Title("Managers")] 
         [SerializeField] private PlayerController _playerController = null;
         [SerializeField] private CatManager _catManager = null;
-        [SerializeField] private TimeManager _timeManager = null;
         [SerializeField] private UIManager _uiManager = null;
         
         private void OnEnable()
@@ -28,11 +27,6 @@ namespace GameJamCat
             if (_uiManager != null)
             {
                 _uiManager.Initialize();
-            }
-
-            if (_timeManager != null)
-            {
-                _timeManager.Initialize();
             }
         }
 
@@ -52,11 +46,6 @@ namespace GameJamCat
             if (_uiManager != null)
             {
                 _uiManager.CleanUp();
-            }
-
-            if (_timeManager != null)
-            {
-                _timeManager.CleanUp();
             }
         }
         
