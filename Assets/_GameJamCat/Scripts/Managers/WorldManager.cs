@@ -31,8 +31,8 @@ namespace GameJamCat
         {
             if (_catManager != null)
             {
-                _catManager.Initialize();
                 _catManager.OnGeneratedSelectedCatToFind += HandleOnGeneratedSelectedCatToFind;
+                _catManager.Initialize();
             }
 
             if (_uiManager != null)
