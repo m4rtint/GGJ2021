@@ -9,27 +9,39 @@ namespace GameJamCat
         private const string TimeSpanFormat = "mm\\:ss";
         [SerializeField] private TextMeshProUGUI _timerText = null;
         private TimeSpan _timeSpan;
+        private float _maxTime = 0f;
         private float _time = 0f;
         private bool _maxTimeReached = false;
 
-        private void CleanUp()
+        public void Initialize(float maxTime)
         {
-            _maxTimeReached = false;
-        }
-
-        private void OnEnable()
-        {
+            _maxTime = maxTime;
             CleanUp();
         }
-        
-        private void Update()
+
+        public void UpdateTime(float time)
         {
-            
+            if (!_maxTimeReached)
+            {
+                _time = time;
+                SetTimeUI(_time);
+                HasTimeRunOut();
+            }
+            else
+            {
+                SetTimeUI(_maxTime);
+            }
         }
 
-        private bool HasTimeRunOut()
+        public void CleanUp()
         {
-            return false;
+            _maxTimeReached = false;
+            SetTimeUI(0f);
+        }
+
+        private void HasTimeRunOut()
+        {
+            _maxTimeReached = _time >= _maxTime;
         }
 
         private void SetTimeUI(float time)

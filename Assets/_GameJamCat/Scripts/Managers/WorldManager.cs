@@ -16,6 +16,10 @@ namespace GameJamCat
         [SerializeField] private CatManager _catManager = null;
         [SerializeField] private UIManager _uiManager = null;
         
+        //TimeManagement
+        private const float MaxTime = 120f;
+        private float _currentTime = 0f;
+
         private void OnEnable()
         {
             if (_catManager != null)
@@ -26,13 +30,23 @@ namespace GameJamCat
 
             if (_uiManager != null)
             {
-                _uiManager.Initialize();
+                _uiManager.Initialize(MaxTime);
             }
         }
 
         private void Start()
         {
             _stateManager.SetState(State.Pregame);
+        }
+
+        private void Update()
+        {
+            _currentTime += Time.deltaTime;
+
+            if (_uiManager != null)
+            {
+                _uiManager.UpdateTimer(_currentTime);
+            }
         }
 
         private void OnDisable()

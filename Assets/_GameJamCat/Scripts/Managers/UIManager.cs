@@ -6,16 +6,17 @@ namespace GameJamCat
     public class UIManager : MonoBehaviour
     {
         private readonly IStateManager _stateManager = StateManager.Instance;
-        
+
         [SerializeField] private DossierViewBehaviour _dossierView = null;
         [SerializeField] private ScreenTransitionViewBehaviour _transitionViewBehaviour = null;
+        [SerializeField] private TimerUI _timer = null;
         [SerializeField] private EndGameMenu _endgameViewBehaviour = null;
         [SerializeField] private GameObject _crossHair = null;
-        
+
         /// <summary>
         /// Initialize UIManager, setup values here
         /// </summary>
-        public void Initialize()
+        public void Initialize(float maxTime)
         {
             if (_dossierView != null)
             {
@@ -39,6 +40,19 @@ namespace GameJamCat
             {
                 _crossHair.gameObject.SetActive(false);
             }
+
+            if (_timer != null)
+            {
+                _timer.Initialize(maxTime);
+            }
+        }
+
+        public void UpdateTimer(float currentTime)
+        {
+            if (_timer != null)
+            {
+                _timer.UpdateTime(currentTime);
+            }
         }
 
         /// <summary>
@@ -50,6 +64,11 @@ namespace GameJamCat
             if (_transitionViewBehaviour != null)
             {
                 _transitionViewBehaviour.OnCompleteFade -= HandleOnFadeComplete;
+            }
+
+            if (_timer != null)
+            {
+                _timer.CleanUp();
             }
         }
 
