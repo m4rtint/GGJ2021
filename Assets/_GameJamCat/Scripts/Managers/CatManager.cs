@@ -11,7 +11,7 @@ namespace GameJamCat
         
         [Title("Managers")]
         [SerializeField] private CatFactory _catGenerator = null;
-        [SerializeField] private SpawnArea _spawnArea = null;
+        [SerializeField] private SpawnArea[] _spawnArea = null;
 
         [Title("Properties")] 
         [SerializeField] private int _catsToSpawn = 1;
@@ -21,6 +21,7 @@ namespace GameJamCat
         private List<CatBehaviour> _activeCats;
         private CatBehaviour _chosenCatToFind = null;
 
+        public event Action<Texture> OnGeneratedCatTexture;
         public event Action<CatBehaviour> OnGeneratedSelectedCatToFind;
         
         /// <summary>
@@ -54,7 +55,7 @@ namespace GameJamCat
             }
 
             _chosenCatToFind = Utilities.GetRandom(_activeCats);
-            
+            SetupCamera(_chosenCatToFind);
             if (OnGeneratedSelectedCatToFind != null)
             {
                 OnGeneratedSelectedCatToFind(_chosenCatToFind);
@@ -64,7 +65,8 @@ namespace GameJamCat
         private CatBehaviour GetRandomCat()
         {
             CatBehaviour cat = _catGenerator.GetRandomCat();
-            var position = _spawnArea.GetRandomUnitWithSphere();
+            var spawnArea = Utilities.GetRandom(_spawnArea);
+            var position = spawnArea.GetRandomUnitWithSphere();
             var scale = Utilities.GetRandom(_catScaleRange);
             cat.Initialize(position, new Vector3(scale, scale, scale));
             _activeCats.Add(cat);
@@ -77,6 +79,23 @@ namespace GameJamCat
             {
                 GetRandomCat();
             }
+        }
+
+        private void StoreTexture(Texture catScreenshot)
+        {
+            RTCameraManager.Instance.OnTextureGenerated -= StoreTexture;
+            if (OnGeneratedCatTexture != null)
+            {
+                OnGeneratedCatTexture(catScreenshot);
+            }
+        }
+
+        private void SetupCamera(CatBehaviour selectedCat)
+        {
+            RTCameraManager.Instance.SetupCameraLocation(selectedCat.GetCameraLocation());
+            RTCameraManager.Instance.OnTextureGenerated += StoreTexture;
+            RTCameraManager.Instance.TakeCapture();
+
         }
 
 
