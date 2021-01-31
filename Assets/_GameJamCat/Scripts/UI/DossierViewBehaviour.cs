@@ -36,7 +36,7 @@ namespace GameJamCat
 
         public void SetTargetCat(CatCustomisation catCustomisation)
         {
-            _dossierMenuView.SetNewCat(catCustomisation);
+            _dossierMenuView?.SetNewCat(catCustomisation);
         }
 
         public void Initialize()
