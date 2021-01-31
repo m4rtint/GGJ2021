@@ -175,7 +175,7 @@ MonoBehaviour:
   _catActivitiesImage: {fileID: 665995446202220053}
   _cativities: {fileID: 1961944038163329332}
   _tunaIcon: {fileID: 21300000, guid: da4dc7cb59fbe6d4eb97622d65c19d6d, type: 3}
-  _salmonIcon: {fileID: 21300000, guid: da4dc7cb59fbe6d4eb97622d65c19d6d, type: 3}
+  _salmonIcon: {fileID: 21300000, guid: 12808148d29f7d84fad5acdbf2aaaadf, type: 3}
   _chickenIcon: {fileID: 21300000, guid: d3d5bc6e1b3fd3e4bb9154b0c20d078b, type: 3}
   _pumpkinIcon: {fileID: 21300000, guid: f1cb8f81798bb484d8f430338371e04b, type: 3}
   _dryKibbleIcon: {fileID: 21300000, guid: 22696dddbf9c0a741be3e031dd204b82, type: 3}
