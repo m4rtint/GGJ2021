@@ -2212,7 +2212,7 @@ MonoBehaviour:
   - stateName: Dead
     animationBool: isDead
   species: Cat
-  stats: {fileID: 11400000, guid: 54124446e1aeef84db9a14d4b863cad5, type: 2}
+  stats: {fileID: 11400000, guid: dbe9e93337452e549825f00a2450fc95, type: 2}
   wanderZone: 8
   awareness: 4.06
   scent: 4.3
