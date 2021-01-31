@@ -11,7 +11,6 @@ namespace GameJamCat
         
         [Title("Managers")]
         [SerializeField] private CatFactory _catGenerator = null;
-        [SerializeField] private DialogueOptions dialogueOptions = null;
         [SerializeField] private SpawnArea _spawnArea = null;
 
         [Title("Properties")] 

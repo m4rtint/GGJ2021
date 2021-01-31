@@ -17,7 +17,7 @@ namespace GameJamCat
 
         public Renderer CatRenderer { get; private set; }
 
-        public CatCustomisation CatDialogue => _catDialogue;
+        public CatCustomisation CatDialogue { get => _catDialogue; set => _catDialogue = value; }
 
         /// <summary>
         /// Called by the CatManager when a cat is grabbed from the pool

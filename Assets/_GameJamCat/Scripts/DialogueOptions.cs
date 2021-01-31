@@ -16,29 +16,26 @@ namespace GameJamCat
         public List<CatCustomisation> _catCustomizationOptions;
 
         [System.NonSerialized]
-        private List<CatCustomisation> _catsNotInUse;
-
-        public void Initialize()
-        {
-            _catsNotInUse = new List<CatCustomisation>(_catCustomizationOptions);
-        }
+        private List<CatCustomisation> _pool;
 
         public CatCustomisation GetRandomCat()
         {
-            if(_catsNotInUse.Count == 0)
+            _pool ??= new List<CatCustomisation>(_catCustomizationOptions);
+            if (_pool.Count == 0)
             {
                 // Deal with this properly later
                 return new CatCustomisation();
             }
-            int index = Random.Range(0, _catsNotInUse.Count);
-            var cat = _catsNotInUse[index];
-            _catsNotInUse.RemoveAt(index);
+            int index = Random.Range(0, _pool.Count);
+            var cat = _pool[index];
+            _pool.RemoveAt(index);
             return cat;
         }
 
         public void RecycleCat(CatCustomisation cat)
         {
-            _catsNotInUse.Add(cat);
+            _pool ??= new List<CatCustomisation>(_catCustomizationOptions);
+            _pool.Add(cat);
         }
 
     }
