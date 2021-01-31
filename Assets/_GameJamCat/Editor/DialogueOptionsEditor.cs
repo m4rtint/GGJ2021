@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System.IO;
 
 namespace GameJamCat
 {
@@ -37,15 +38,17 @@ namespace GameJamCat
 
         private void SelectCSV()
         {
-            _path.stringValue = EditorUtility.OpenFilePanel("Select CSV", Application.dataPath, "csv");
+            _path.stringValue = "Assets" + EditorUtility.OpenFilePanel("Select CSV", Application.dataPath, "csv").Substring(Application.dataPath.Length);
         }
 
         private void LoadCSV(DialogueOptions options)
         {
             if (string.IsNullOrEmpty(_path.stringValue)) return;
-            var list = Sinbad.CsvUtil.LoadObjects<CatCustomisation>(_path.stringValue);
+            var pathToLoad = Path.Combine(Application.dataPath.Substring(0, Application.dataPath.Length - 7),_path.stringValue);
+            var list = Sinbad.CsvUtil.LoadObjects<CatCustomisation>(pathToLoad);
             Undo.RecordObject(options, "Load options");
             options._catCustomizationOptions = list;
+            Debug.Log($"Loaded {list.Count} options");
         }
     }
 }

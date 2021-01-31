@@ -11,7 +11,7 @@ namespace GameJamCat
     public class DialogueOptions : ScriptableObject
     {
 #if UNITY_EDITOR
-        [SerializeField] private string _pathToCSV;
+        [SerializeField, Tooltip("Note that this doesn't do anything on its own - you have to load the csv to make changes to the list")] private string _pathToCSV;
 #endif
         public List<CatCustomisation> _catCustomizationOptions;
 
@@ -72,6 +72,7 @@ namespace GameJamCat
         CardboardBox,
         FishingRod,
         CatnipSack,
-        ScratchingPost
+        ScratchingPost,
+        TennisBall
     }
 }
