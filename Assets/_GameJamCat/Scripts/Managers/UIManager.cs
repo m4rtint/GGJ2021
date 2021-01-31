@@ -117,7 +117,13 @@ namespace GameJamCat
         #region StateChanges
         private void OnPregameSet()
         {
+#if UNITY_EDITOR
+            HandleOnDialogueCompleted();
+#endif
+            
+#if !UNITY_EDITOR
             _pregameDialogueBox.StartAnimation();
+#endif
             SetCrossHairState(false);
         }
 

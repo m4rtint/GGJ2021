@@ -12,7 +12,6 @@ namespace GameJamCat
         private const float DurationOfReadTimeAfterAnimationCompletion = 3f;
         private const string PregameMessage =
             "... Thanks again detective for helping us. We couldnt find the cat all day, and theres only two minutes left until the adoption... Please help us find it!";
-     
         
         public event Action OnDialogueCompleted;
         
@@ -22,6 +21,7 @@ namespace GameJamCat
 
         public void StartAnimation()
         {
+            // Technically not needed, but OnEnable on DialogueBoxBehaviour already does a tween
             _dialogueBehaviourContainer.DOScale(Vector3.one, ScaleAnimationDuration).SetEase(Ease.OutBack).SetDelay(DelayBeforeShowingDialogueBox).OnComplete(() =>
             {
                 _dialogueBoxBehaviour.ReadText(PregameMessage);
@@ -30,6 +30,16 @@ namespace GameJamCat
 
         public void Initialize()
         {
+            if (_dialogueBoxBehaviour != null)
+            {
+
+                _dialogueBehaviourContainer = _dialogueBoxBehaviour.transform.parent;
+#if UNITY_EDITOR
+                _dialogueBehaviourContainer.gameObject.SetActive(false);
+#endif
+                _dialogueBehaviourContainer.localScale = Vector3.zero;
+            }
+            
             _dialogueBoxBehaviour.text = string.Empty;
         }
 
@@ -43,8 +53,6 @@ namespace GameJamCat
             if (_dialogueBoxBehaviour != null)
             {
                 _dialogueBoxBehaviour.OnReadCompleted += HandleOnReadComplete;
-                _dialogueBehaviourContainer = _dialogueBoxBehaviour.transform.parent;
-                _dialogueBehaviourContainer.localScale = Vector3.zero;
             }
         }
 
