@@ -13,11 +13,13 @@ namespace GameJamCat
         {
             if (_startGameButton != null)
             {
+                _startGameButton.onClick.RemoveAllListeners();
                 _startGameButton.onClick.AddListener(() => SceneManager.LoadScene("MainScene"));
             }
 
             if (_quitGameButton != null)
             {
+                _quitGameButton.onClick.RemoveAllListeners();
                 _quitGameButton.onClick.AddListener(() => Application.Quit());
             }
         }
