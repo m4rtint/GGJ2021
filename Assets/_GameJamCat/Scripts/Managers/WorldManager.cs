@@ -31,6 +31,7 @@ namespace GameJamCat
             if (_uiManager != null)
             {
                 _uiManager.Initialize(MaxTime);
+                _uiManager.OnTimerRanOut += HandleTimerRunningOut;
             }
         }
 
@@ -60,6 +61,7 @@ namespace GameJamCat
             if (_uiManager != null)
             {
                 _uiManager.CleanUp();
+                _uiManager.OnTimerRanOut -= HandleTimerRunningOut;
             }
         }
         
@@ -68,6 +70,12 @@ namespace GameJamCat
         {
             // TODO - update dossier
         }
+
+        private void HandleTimerRunningOut()
+        {
+            // _stateManager.SetState(State.EndGame);
+        }
+
         #endregion
     }
 }

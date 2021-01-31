@@ -27,10 +27,6 @@ namespace GameJamCat
                 SetTimeUI(_time);
                 HasTimeRunOut();
             }
-            else
-            {
-                SetTimeUI(_maxTime);
-            }
         }
 
         public void CleanUp()
@@ -42,6 +38,11 @@ namespace GameJamCat
         private void HasTimeRunOut()
         {
             _maxTimeReached = _time >= _maxTime;
+
+            if (_maxTimeReached)
+            {
+                SetTimeUI(_maxTime);
+            }
         }
 
         private void SetTimeUI(float time)

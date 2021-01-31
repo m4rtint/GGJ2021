@@ -13,6 +13,9 @@ namespace GameJamCat
         [SerializeField] private EndGameMenu _endgameViewBehaviour = null;
         [SerializeField] private GameObject _crossHair = null;
 
+        private float _maxTime = 0f;
+        public event Action OnTimerRanOut;
+
         /// <summary>
         /// Initialize UIManager, setup values here
         /// </summary>
@@ -45,6 +48,8 @@ namespace GameJamCat
             {
                 _timer.Initialize(maxTime);
             }
+
+            _maxTime = maxTime;
         }
 
         public void UpdateTimer(float currentTime)
@@ -52,6 +57,11 @@ namespace GameJamCat
             if (_timer != null)
             {
                 _timer.UpdateTime(currentTime);
+
+                if (currentTime > _maxTime)
+                {
+                    OnTimerRanOut?.Invoke();
+                }
             }
         }
 
