@@ -44,6 +44,8 @@ namespace GameJamCat
             if (_playerController != null)
             {
                 _playerController.OnEndConversation += HandleOnEndConversation;
+                _playerController.LookingAtCat += HandleShowCrossHairText;
+                _playerController.NotLookingAtCat += HandleHideCrossHairText;
             }
         }
 
@@ -102,6 +104,16 @@ namespace GameJamCat
         {
             _uiManager.SetCrossHairState(true);
         }
+
+        private void HandleShowCrossHairText()
+        {
+            _uiManager.SetCrossHairTextState(true);
+        }
+
+        private void HandleHideCrossHairText()
+        {
+            _uiManager.SetCrossHairTextState(false);
+        } 
         #endregion
     }
 }

@@ -20,10 +20,14 @@ namespace GameJamCat {
         private Camera _mainCamera = null;
         private CatBehaviour _currentCatInFocus = null;
         private bool _cameraAnimationInProgress = false;
+        private bool _lookingAtCat = false;
         private Vector3 _viewportCenter = new Vector3(0.5f, 0.5f, 0);
 
         public event Action OnEndConversation;
-        
+        public event Action LookingAtCat;
+        public event Action NotLookingAtCat;
+
+
         private CharacterController characterController { get; set; }
         private PlayerCharacter playerCharacter { get; set; }
         
@@ -102,6 +106,11 @@ namespace GameJamCat {
             {
                 if (hit.collider.CompareTag(CatConstant))
                 {
+                    if (_lookingAtCat == false)
+                    {
+                        LookingAtCat();
+                        _lookingAtCat = true;
+                    }
                     // Fire other event here that could highlite the cross hair 
                     // Thas UX babey 
                     if (Input.GetKeyDown(KeyCode.Mouse1))
@@ -110,6 +119,11 @@ namespace GameJamCat {
                         _currentCatInFocus.BeginConversation();
                         _cameraAnimationInProgress = true;
                     }
+                }
+                else
+                {
+                    NotLookingAtCat();
+                    _lookingAtCat = false;
                 }
             }
         }
