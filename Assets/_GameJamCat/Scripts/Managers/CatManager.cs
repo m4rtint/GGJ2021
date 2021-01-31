@@ -21,6 +21,7 @@ namespace GameJamCat
         private List<CatBehaviour> _activeCats;
         private CatBehaviour _chosenCatToFind = null;
 
+        public event Action<Texture> OnGeneratedCatTexture;
         public event Action<CatBehaviour> OnGeneratedSelectedCatToFind;
         
         /// <summary>
@@ -54,7 +55,7 @@ namespace GameJamCat
             }
 
             _chosenCatToFind = Utilities.GetRandom(_activeCats);
-            _chosenCatToFind.SetupCamera();
+            SetupCamera(_chosenCatToFind);
             if (OnGeneratedSelectedCatToFind != null)
             {
                 OnGeneratedSelectedCatToFind(_chosenCatToFind);
@@ -77,6 +78,23 @@ namespace GameJamCat
             {
                 GetRandomCat();
             }
+        }
+
+        private void StoreTexture(Texture catScreenshot)
+        {
+            RTCameraManager.Instance.OnTextureGenerated -= StoreTexture;
+            if (OnGeneratedCatTexture != null)
+            {
+                OnGeneratedCatTexture(catScreenshot);
+            }
+        }
+
+        private void SetupCamera(CatBehaviour selectedCat)
+        {
+            RTCameraManager.Instance.SetupCameraLocation(selectedCat.GetCameraLocation());
+            RTCameraManager.Instance.OnTextureGenerated += StoreTexture;
+            RTCameraManager.Instance.TakeCapture();
+
         }
 
 

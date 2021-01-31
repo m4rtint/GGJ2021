@@ -42,6 +42,14 @@ namespace GameJamCat
             }
         }
 
+        public void SetCatImage(Texture catimage)
+        {
+            if(_dossierMenuView != null)
+            {
+                _dossierMenuView.SetTexture(catimage);
+            }
+        }
+
         public void Initialize()
         {
             if (_dossierMenuView != null)

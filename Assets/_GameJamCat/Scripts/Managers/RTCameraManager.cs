@@ -2,6 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.UI;
+using static GameJamCat.Utilities;
 
 namespace GameJamCat
 {
@@ -13,22 +16,21 @@ namespace GameJamCat
         const int CameraWidth = 256;
         const int CameraHeight = 256;
         const int CameraDepth = 8;
-        private Camera cam = null;
+        [SerializeField] private Camera cam = null;
 
-        public event Action<Texture2D> OnTextureGenerated;
+        public event Action<Texture> OnTextureGenerated;
 
         // I know this isn't great for singletons lol, but should be okay for this purpose
-        public static RTCameraManager Instance { get; private set; }
-        private bool isCapturing = false;
-
-
-        // Start is called before the first frame update
-        void Awake()
-        {
-            Instance = this;
-            cam = GetComponent<Camera>();
+        public static RTCameraManager Instance {
+            get
+            {
+                _instance ??= FindObjectOfType<RTCameraManager>();
+                return _instance;
+            }
         }
 
+        private static RTCameraManager _instance;
+        private bool isCapturing = false;
 
         public void SetupCameraLocation(Transform t)
         {
@@ -37,28 +39,37 @@ namespace GameJamCat
             cam.transform.localRotation = Quaternion.identity;
         }
 
-        private void OnPostRender()
-        {
-            if (isCapturing)
-            {
-                isCapturing = false;
-
-                var tex = cam.targetTexture;
-                var output = new Texture2D(tex.width, tex.height, TextureFormat.ARGB32, false);
-                var rect = new Rect(0, 0, tex.width, tex.height);
-                output.ReadPixels(rect, 0, 0);
-
-                if(OnTextureGenerated != null)
-                {
-                    OnTextureGenerated(output);
-                }
-            }
-        }
-
         public void TakeCapture()
         {
             cam.targetTexture = RenderTexture.GetTemporary(CameraWidth, CameraHeight, CameraDepth);
             isCapturing = true;
         }
+
+        private void OnEnable()
+        {
+            RenderPipelineManager.endCameraRendering += OnEndCameraRendering;
+        }
+
+        private void OnDisable()
+        {
+            RenderPipelineManager.endCameraRendering -= OnEndCameraRendering;
+        }
+
+        #region delegates
+        private void OnEndCameraRendering(ScriptableRenderContext context, Camera camera)
+        {
+            if (isCapturing)
+            {
+                isCapturing = false;
+                var tex = cam.targetTexture;
+                var output = tex.ToTexture2D();
+
+                if (OnTextureGenerated != null)
+                {
+                    OnTextureGenerated(output);
+                }
+            }
+        }
+        #endregion
     }
 }

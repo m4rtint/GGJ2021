@@ -16,7 +16,6 @@ namespace GameJamCat
         private CinemachineVirtualCamera _playerVirtualCamera;
         [SerializeField] Transform[] _renderTextureCamLocations;
 
-        public event System.Action<Texture2D> OnCatTextureGenerated;
         public Renderer CatRenderer { get; private set; }
 
         public CatCustomisation CatDialogue { get => _catDialogue; set => _catDialogue = value; }
@@ -102,19 +101,10 @@ namespace GameJamCat
             _playableDirector.Pause();
         }
 
-        private void StoreTexture(Texture2D catScreenshot)
+        public Transform GetCameraLocation()
         {
-            CatScreenshot = catScreenshot;
-            RTCameraManager.Instance.OnTextureGenerated -= StoreTexture;
+            return Utilities.GetRandom(_renderTextureCamLocations);
         }
 
-        [Sirenix.OdinInspector.Button]
-        public void SetupCamera()
-        {
-            RTCameraManager.Instance.SetupCameraLocation(Utilities.GetRandom(_renderTextureCamLocations));
-            RTCameraManager.Instance.OnTextureGenerated += StoreTexture;
-            RTCameraManager.Instance.TakeCapture();
-            
-        }
     }
 }
