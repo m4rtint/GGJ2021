@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487a353228de2464595826e32d233425, type: 3}
   m_Name: DialogueOptions
   m_EditorClassIdentifier: 
-  _pathToCSV: C:/Users/unoct/Documents/Unity/GGJ2021/Assets/_GameJamCat/CatDialogue.csv
+  _pathToCSV: Assets/_GameJamCat/CatDialogue.csv
   _catCustomizationOptions:
   - _catName: Reggie
     _catNameAnswer: My name is Reginal Von Housen Bivinhop the third. But you young
@@ -109,4 +109,41 @@ MonoBehaviour:
       cabinet to purrge the first day of the work week from our kitty calendar.
     _food: 8
     _toy: 2
+    _flavourText: 
+  - _catName: Satoshi Nekomoto
+    _catNameAnswer: 'People usually refer to me as the father of meowcoin, but my
+      real name is Satoshi Nekomoto. '
+    _catFoodAnswer: I'll usually eat whatever comes in block form, which so happens
+      to be kibble most of the time
+    _catActivityAnswer: My favourite thing to do is to sit back and watch those stonk
+      numbers go up up UP! Usually while getting high myself with some catnip
+    _food: 6
+    _toy: 4
+    _flavourText: 
+  - _catName: Slonky McBufferson
+    _catNameAnswer: Whaddup homie, I'm the infamous Slonky McBufferson... I'll let
+      you admire my muscles for free since you're still here
+    _catFoodAnswer: 8 raw eggs a day. I even eat the shells. After that is my favourite,
+      CHICKEN. I mean the actual bird chicken, I wasn't calling you a chicken, you
+      yellow-bellied lizard.
+    _catActivityAnswer: I like hitting the gym with my fellow bros, we usually will
+      try to play tennis but get distracted by the ball before anyone scores a point
+    _food: 2
+    _toy: 6
+    _flavourText: 
+  - _catName: Ada Meowlace
+    _catNameAnswer: meow meow meow meow meow meow... Wait you can actually understand
+      me? BY GOD. This is truly one for the books. I'll have to write Chuck Meowbagge
+      right away! Oh what? Sorry I had my faculties occupied, you can call me Ada
+      Meowlace, the queen of modern meowputing
+    _catFoodAnswer: I perfer to have some a little less... alive. I just can't stand
+      to see these poor animals be treated the way they do. Oh you say I'm an animal
+      as well? Well look who's talking you ape. Anywho, just leave some pumpkin for
+      my outside your door and I'll be sure its gone by tomorrow.
+    _catActivityAnswer: Multiply three paws length that by a standard whisker and
+      you have the platonic ideal of yarn. It's really that simple darling, there
+      truly isn't a better toy in all of the kingdom. Yarn will show you the patterns
+      of the universe.
+    _food: 3
+    _toy: 0
     _flavourText: 
