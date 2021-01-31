@@ -11,7 +11,7 @@ namespace GameJamCat
         private const float ScaleAnimationDuration = 1f;
         private const float DurationOfReadTimeAfterAnimationCompletion = 3f;
         private const string PregameMessage =
-            "... Thanks again detective for helping us. We couldn’t find the cat all day, and there’s only an hour left until the adoption... Please help us find it!";
+            "... Thanks again detective for helping us. We couldnt find the cat all day, and theres only two minutes left until the adoption... Please help us find it!";
      
         
         public event Action OnDialogueCompleted;
@@ -59,7 +59,7 @@ namespace GameJamCat
         private IEnumerator WaitForSecondsBeforeFadingIn(float waitTime)
         {
             yield return new WaitForSeconds(waitTime);
-            _dialogueBehaviourContainer.DOScale(Vector3.zero, ScaleAnimationDuration).SetEase(Ease.OutBack).OnComplete(() =>
+            _dialogueBehaviourContainer.DOScale(Vector3.zero, ScaleAnimationDuration).SetEase(Ease.OutQuint).OnComplete(() =>
             {
                 if (OnDialogueCompleted != null)
                 {
