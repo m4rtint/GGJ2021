@@ -6,8 +6,12 @@ namespace GameJamCat
 {
     public class CatBehaviour : MonoBehaviour
     {
+        [SerializeField]
+        private CatCustomisation _catDialogue;
 
         public Renderer CatRenderer { get; private set; }
+
+        public CatCustomisation CatDialogue => _catDialogue;
 
         /// <summary>
         /// Called by the CatManager when a cat is grabbed from the pool
