@@ -108,7 +108,7 @@ namespace GameJamCat
             int lastIndex = _pool.Count - 1;
             if (lastIndex <= 0)
             {
-                cat = Instantiate(_catPrefab);
+                cat = Instantiate(_catPrefab, Vector3.zero, Quaternion.identity);
                 SceneManager.MoveGameObjectToScene(cat.gameObject, _poolScene);
             }
             else
