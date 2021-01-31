@@ -108,10 +108,10 @@ RectTransform:
   m_Father: {fileID: 8580527592691215546}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.157959, y: -180.23}
-  m_SizeDelta: {x: -20.3306, y: 141.54}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: -19}
+  m_SizeDelta: {x: -86, y: -94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8580527592101679706
 CanvasRenderer:
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: asdasdasdasdas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d792e2dc276593c4ab7900514d367d26, type: 2}
   m_sharedMaterial: {fileID: 6530025793157268521, guid: d792e2dc276593c4ab7900514d367d26,
@@ -313,17 +313,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8580527592719141775}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.031682853, w: 0.99949795}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8580527591558289740}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 57, y: -9}
-  m_SizeDelta: {x: 200, y: 50}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.631}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.0002670288}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8580527592719141770
 CanvasRenderer:
@@ -353,9 +353,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '?????
-
-'
+  m_text: Sanctuary Owner
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d792e2dc276593c4ab7900514d367d26, type: 2}
   m_sharedMaterial: {fileID: 6530025793157268521, guid: d792e2dc276593c4ab7900514d367d26,
@@ -390,8 +388,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -437,6 +435,7 @@ GameObject:
   - component: {fileID: 8580527592921327530}
   - component: {fileID: 8580527592921327529}
   - component: {fileID: 8580527592921327528}
+  - component: {fileID: 725946870}
   m_Layer: 5
   m_Name: DialougeBox
   m_TagString: Untagged
@@ -525,3 +524,16 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 55
+--- !u!114 &725946870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8580527592921327535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2109adc3aecdbfa4a9a5c295af3b3b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueBoxBehaviour: {fileID: 8580527592101679705}

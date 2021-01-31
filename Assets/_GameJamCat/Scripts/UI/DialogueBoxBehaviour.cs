@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -8,12 +7,13 @@ namespace GameJamCat
 {
     public class DialogueBoxBehaviour : TextMeshProUGUI
     {
+        public event Action OnReadCompleted;
+        
         private float _speed = 50f;
 
         public void ReadText(string newtext)
         {
             text = string.Empty;
-
 
             string[] subTexts = newtext.Split('<', '>');
 
@@ -63,6 +63,12 @@ namespace GameJamCat
                     }
                     subCounter++;
                 }
+
+                if (OnReadCompleted != null)
+                {
+                    OnReadCompleted();
+                }
+                
                 yield return null;
 
                 WaitForSeconds EvaluateTag(string tag)
