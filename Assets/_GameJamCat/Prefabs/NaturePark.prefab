@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2708735903094572145}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2708735903094572145
 Transform:
@@ -135,12 +135,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8833336357395928092}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8833336357395928092
 Transform:
@@ -192,12 +192,12 @@ GameObject:
   - component: {fileID: 6353428014410845943}
   - component: {fileID: 6353428014410845936}
   - component: {fileID: 6353428014410845942}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014410845937
 Transform:
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 6353428014419987550}
   - component: {fileID: 6353428014419987551}
   - component: {fileID: 6353428014419987549}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Wooden Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,12 +384,12 @@ GameObject:
   - component: {fileID: 6353428014421239601}
   - component: {fileID: 6353428014421239602}
   - component: {fileID: 6353428014421239607}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014421239600
 Transform:
@@ -480,12 +480,12 @@ GameObject:
   - component: {fileID: 6353428014465619028}
   - component: {fileID: 6353428014465619029}
   - component: {fileID: 6353428014465619035}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014465619030
 Transform:
@@ -576,12 +576,12 @@ GameObject:
   - component: {fileID: 6353428014467120682}
   - component: {fileID: 6353428014467120683}
   - component: {fileID: 6353428014467120681}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014467120676
 Transform:
@@ -672,12 +672,12 @@ GameObject:
   - component: {fileID: 6353428014482855205}
   - component: {fileID: 6353428014482855206}
   - component: {fileID: 6353428014482855204}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014482855207
 Transform:
@@ -768,7 +768,7 @@ GameObject:
   - component: {fileID: 6353428014504303740}
   - component: {fileID: 6353428014504303741}
   - component: {fileID: 6353428014504303715}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GrassTile (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -864,12 +864,12 @@ GameObject:
   - component: {fileID: 6353428014591483327}
   - component: {fileID: 6353428014591483320}
   - component: {fileID: 6353428014591483326}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014591483321
 Transform:
@@ -960,12 +960,12 @@ GameObject:
   - component: {fileID: 6353428014592354496}
   - component: {fileID: 6353428014592354497}
   - component: {fileID: 6353428014592354503}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014592354498
 Transform:
@@ -1058,7 +1058,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014597320854
 Transform:
@@ -1089,12 +1089,12 @@ GameObject:
   - component: {fileID: 6353428014606534090}
   - component: {fileID: 6353428014606534091}
   - component: {fileID: 6353428014606534089}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Fence_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014606534084
 Transform:
@@ -1185,12 +1185,12 @@ GameObject:
   - component: {fileID: 6353428014611079097}
   - component: {fileID: 6353428014611079098}
   - component: {fileID: 6353428014611079096}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014611079099
 Transform:
@@ -1281,12 +1281,12 @@ GameObject:
   - component: {fileID: 6353428014624577151}
   - component: {fileID: 6353428014624577144}
   - component: {fileID: 6353428014624577150}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Lamp (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014624577145
 Transform:
@@ -1378,12 +1378,12 @@ GameObject:
   - component: {fileID: 6353428014647880419}
   - component: {fileID: 6353428014647880444}
   - component: {fileID: 6353428014647880418}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DoubleBench (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014647880445
 Transform:
@@ -1474,12 +1474,12 @@ GameObject:
   - component: {fileID: 6353428014688970435}
   - component: {fileID: 6353428014688970460}
   - component: {fileID: 6353428014688970434}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014688970461
 Transform:
@@ -1570,12 +1570,12 @@ GameObject:
   - component: {fileID: 6353428014693070557}
   - component: {fileID: 6353428014693070558}
   - component: {fileID: 6353428014693070556}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014693070559
 Transform:
@@ -1666,12 +1666,12 @@ GameObject:
   - component: {fileID: 6353428014698654985}
   - component: {fileID: 6353428014698654986}
   - component: {fileID: 6353428014698654984}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014698654987
 Transform:
@@ -1762,12 +1762,12 @@ GameObject:
   - component: {fileID: 6353428014701106860}
   - component: {fileID: 6353428014701106861}
   - component: {fileID: 6353428014701106835}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014701106862
 Transform:
@@ -1858,12 +1858,12 @@ GameObject:
   - component: {fileID: 6353428014703951696}
   - component: {fileID: 6353428014703951697}
   - component: {fileID: 6353428014703951703}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014703951698
 Transform:
@@ -1954,12 +1954,12 @@ GameObject:
   - component: {fileID: 6353428014727408567}
   - component: {fileID: 6353428014727408560}
   - component: {fileID: 6353428014727408566}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Lamp (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014727408561
 Transform:
@@ -2051,12 +2051,12 @@ GameObject:
   - component: {fileID: 6353428014758426162}
   - component: {fileID: 6353428014758426163}
   - component: {fileID: 6353428014758426161}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FanceConnector (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014758426060
 Transform:
@@ -2147,7 +2147,7 @@ GameObject:
   - component: {fileID: 6353428014758634569}
   - component: {fileID: 6353428014758634570}
   - component: {fileID: 6353428014758634568}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_High (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2243,12 +2243,12 @@ GameObject:
   - component: {fileID: 6353428014793231936}
   - component: {fileID: 6353428014793231937}
   - component: {fileID: 6353428014793231943}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014793231938
 Transform:
@@ -2339,12 +2339,12 @@ GameObject:
   - component: {fileID: 6353428014800949938}
   - component: {fileID: 6353428014800949939}
   - component: {fileID: 6353428014800949937}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trassh Bin (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014800949836
 Transform:
@@ -2435,7 +2435,7 @@ GameObject:
   - component: {fileID: 6353428014803559636}
   - component: {fileID: 6353428014803559637}
   - component: {fileID: 6353428014803559643}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GrassTile (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2450,7 +2450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6353428014803559639}
   m_LocalRotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
-  m_LocalPosition: {x: 26.150002, y: 1.24, z: -12.71}
+  m_LocalPosition: {x: 26.150002, y: 0.69, z: -12.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6422937539424265200}
@@ -2531,12 +2531,12 @@ GameObject:
   - component: {fileID: 6353428014832216597}
   - component: {fileID: 6353428014832216598}
   - component: {fileID: 6353428014832216596}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014832216599
 Transform:
@@ -2627,12 +2627,12 @@ GameObject:
   - component: {fileID: 6353428014833344553}
   - component: {fileID: 6353428014833344554}
   - component: {fileID: 6353428014833344552}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014833344555
 Transform:
@@ -2723,12 +2723,12 @@ GameObject:
   - component: {fileID: 6353428014881899688}
   - component: {fileID: 6353428014881899689}
   - component: {fileID: 6353428014881899695}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014881899690
 Transform:
@@ -2819,12 +2819,12 @@ GameObject:
   - component: {fileID: 6353428014882667521}
   - component: {fileID: 6353428014882667522}
   - component: {fileID: 6353428014882667520}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Lamp (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014882667523
 Transform:
@@ -2916,12 +2916,12 @@ GameObject:
   - component: {fileID: 6353428014891919985}
   - component: {fileID: 6353428014891919986}
   - component: {fileID: 6353428014891919984}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014891919987
 Transform:
@@ -3012,12 +3012,12 @@ GameObject:
   - component: {fileID: 6353428014898420485}
   - component: {fileID: 6353428014898420486}
   - component: {fileID: 6353428014898420484}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014898420487
 Transform:
@@ -3108,12 +3108,12 @@ GameObject:
   - component: {fileID: 6353428014940059775}
   - component: {fileID: 6353428014940059768}
   - component: {fileID: 6353428014940059774}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014940059769
 Transform:
@@ -3204,7 +3204,7 @@ GameObject:
   - component: {fileID: 6353428014947622814}
   - component: {fileID: 6353428014947622815}
   - component: {fileID: 6353428014947622813}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GrassTile (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3300,12 +3300,12 @@ GameObject:
   - component: {fileID: 6353428014951018517}
   - component: {fileID: 6353428014951018518}
   - component: {fileID: 6353428014951018516}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014951018519
 Transform:
@@ -3396,12 +3396,12 @@ GameObject:
   - component: {fileID: 6353428014952825596}
   - component: {fileID: 6353428014952825597}
   - component: {fileID: 6353428014952825571}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014952825598
 Transform:
@@ -3492,12 +3492,12 @@ GameObject:
   - component: {fileID: 6353428014957102842}
   - component: {fileID: 6353428014957102843}
   - component: {fileID: 6353428014957102841}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014957102836
 Transform:
@@ -3588,12 +3588,12 @@ GameObject:
   - component: {fileID: 6353428014970916168}
   - component: {fileID: 6353428014970916169}
   - component: {fileID: 6353428014970916175}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014970916170
 Transform:
@@ -3684,12 +3684,12 @@ GameObject:
   - component: {fileID: 6353428014992372081}
   - component: {fileID: 6353428014992372082}
   - component: {fileID: 6353428014992372080}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trassh Bin (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428014992372083
 Transform:
@@ -3780,12 +3780,12 @@ GameObject:
   - component: {fileID: 6353428015003716382}
   - component: {fileID: 6353428015003716383}
   - component: {fileID: 6353428015003716381}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015003716376
 Transform:
@@ -3876,12 +3876,12 @@ GameObject:
   - component: {fileID: 6353428015022613425}
   - component: {fileID: 6353428015022613426}
   - component: {fileID: 6353428015022613424}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015022613427
 Transform:
@@ -3972,7 +3972,7 @@ GameObject:
   - component: {fileID: 6353428015027062308}
   - component: {fileID: 6353428015027062309}
   - component: {fileID: 6353428015027062315}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4068,12 +4068,12 @@ GameObject:
   - component: {fileID: 6353428015027406342}
   - component: {fileID: 6353428015027406343}
   - component: {fileID: 6353428015027406341}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015027406336
 Transform:
@@ -4164,12 +4164,12 @@ GameObject:
   - component: {fileID: 6353428015028920949}
   - component: {fileID: 6353428015028920950}
   - component: {fileID: 6353428015028920948}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015028920951
 Transform:
@@ -4261,12 +4261,12 @@ GameObject:
   - component: {fileID: 6353428015031131731}
   - component: {fileID: 6353428015031131756}
   - component: {fileID: 6353428015031131730}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Fence_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015031131757
 Transform:
@@ -4357,12 +4357,12 @@ GameObject:
   - component: {fileID: 6353428015059047286}
   - component: {fileID: 6353428015059047287}
   - component: {fileID: 6353428015059047285}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Fence_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015059047280
 Transform:
@@ -4453,12 +4453,12 @@ GameObject:
   - component: {fileID: 6353428015059430923}
   - component: {fileID: 6353428015059430916}
   - component: {fileID: 6353428015059430922}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015059430917
 Transform:
@@ -4549,12 +4549,12 @@ GameObject:
   - component: {fileID: 6353428015067595107}
   - component: {fileID: 6353428015067595132}
   - component: {fileID: 6353428015067595106}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015067595133
 Transform:
@@ -4645,12 +4645,12 @@ GameObject:
   - component: {fileID: 6353428015067622625}
   - component: {fileID: 6353428015067622626}
   - component: {fileID: 6353428015067622624}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015067622627
 Transform:
@@ -4741,12 +4741,12 @@ GameObject:
   - component: {fileID: 6353428015094022297}
   - component: {fileID: 6353428015094022298}
   - component: {fileID: 6353428015094022296}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015094022299
 Transform:
@@ -4837,12 +4837,12 @@ GameObject:
   - component: {fileID: 6353428015118274728}
   - component: {fileID: 6353428015118274729}
   - component: {fileID: 6353428015118274735}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015118274730
 Transform:
@@ -4933,12 +4933,12 @@ GameObject:
   - component: {fileID: 6353428015139101965}
   - component: {fileID: 6353428015139101966}
   - component: {fileID: 6353428015139101964}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015139101967
 Transform:
@@ -5029,12 +5029,12 @@ GameObject:
   - component: {fileID: 6353428015190660838}
   - component: {fileID: 6353428015190660839}
   - component: {fileID: 6353428015190660837}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015190660832
 Transform:
@@ -5125,12 +5125,12 @@ GameObject:
   - component: {fileID: 6353428015191301514}
   - component: {fileID: 6353428015191301515}
   - component: {fileID: 6353428015191301513}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015191301508
 Transform:
@@ -5221,12 +5221,12 @@ GameObject:
   - component: {fileID: 6353428015192813833}
   - component: {fileID: 6353428015192813834}
   - component: {fileID: 6353428015192813832}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015192813835
 Transform:
@@ -5317,12 +5317,12 @@ GameObject:
   - component: {fileID: 6353428015204765196}
   - component: {fileID: 6353428015204765197}
   - component: {fileID: 6353428015204765299}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015204765198
 Transform:
@@ -5413,7 +5413,7 @@ GameObject:
   - component: {fileID: 6353428015222388796}
   - component: {fileID: 6353428015222388797}
   - component: {fileID: 6353428015222388771}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_High
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5509,12 +5509,12 @@ GameObject:
   - component: {fileID: 6353428015230322001}
   - component: {fileID: 6353428015230322002}
   - component: {fileID: 6353428015230322000}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015230322003
 Transform:
@@ -5605,7 +5605,7 @@ GameObject:
   - component: {fileID: 6353428015235749033}
   - component: {fileID: 6353428015235749034}
   - component: {fileID: 6353428015235749032}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GrassTile (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5701,12 +5701,12 @@ GameObject:
   - component: {fileID: 6353428015257698021}
   - component: {fileID: 6353428015257698022}
   - component: {fileID: 6353428015257698020}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015257698023
 Transform:
@@ -5797,7 +5797,7 @@ GameObject:
   - component: {fileID: 6353428015299178811}
   - component: {fileID: 6353428015299178804}
   - component: {fileID: 6353428015299178810}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Flowers (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5893,12 +5893,12 @@ GameObject:
   - component: {fileID: 6353428015318231677}
   - component: {fileID: 6353428015318231678}
   - component: {fileID: 6353428015318231676}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Lamp (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015318231679
 Transform:
@@ -5990,12 +5990,12 @@ GameObject:
   - component: {fileID: 6353428015329554136}
   - component: {fileID: 6353428015329554137}
   - component: {fileID: 6353428015329554143}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FanceConnector (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015329554138
 Transform:
@@ -6086,12 +6086,12 @@ GameObject:
   - component: {fileID: 6353428015349494975}
   - component: {fileID: 6353428015349494968}
   - component: {fileID: 6353428015349494974}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015349494969
 Transform:
@@ -6182,12 +6182,12 @@ GameObject:
   - component: {fileID: 6353428015352846001}
   - component: {fileID: 6353428015352846002}
   - component: {fileID: 6353428015352846000}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FanceConnector (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015352846003
 Transform:
@@ -6278,7 +6278,7 @@ GameObject:
   - component: {fileID: 6353428015374762084}
   - component: {fileID: 6353428015374762085}
   - component: {fileID: 6353428015374762091}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Intersection (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6374,12 +6374,12 @@ GameObject:
   - component: {fileID: 6353428015376010569}
   - component: {fileID: 6353428015376010570}
   - component: {fileID: 6353428015376010568}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015376010571
 Transform:
@@ -6470,7 +6470,7 @@ GameObject:
   - component: {fileID: 6353428015389610769}
   - component: {fileID: 6353428015389610770}
   - component: {fileID: 6353428015389610768}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Road (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6566,12 +6566,12 @@ GameObject:
   - component: {fileID: 6353428015393351290}
   - component: {fileID: 6353428015393351291}
   - component: {fileID: 6353428015393351289}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015393351284
 Transform:
@@ -6662,12 +6662,12 @@ GameObject:
   - component: {fileID: 6353428015398204989}
   - component: {fileID: 6353428015398204990}
   - component: {fileID: 6353428015398204988}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015398204991
 Transform:
@@ -6758,12 +6758,12 @@ GameObject:
   - component: {fileID: 6353428015421845485}
   - component: {fileID: 6353428015421845486}
   - component: {fileID: 6353428015421845484}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Fountain_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015421845487
 Transform:
@@ -6854,12 +6854,12 @@ GameObject:
   - component: {fileID: 6353428015430043975}
   - component: {fileID: 6353428015430043968}
   - component: {fileID: 6353428015430043974}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015430043969
 Transform:
@@ -6950,12 +6950,12 @@ GameObject:
   - component: {fileID: 6353428015456631985}
   - component: {fileID: 6353428015456631986}
   - component: {fileID: 6353428015456631984}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FanceConnector (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015456631987
 Transform:
@@ -7046,12 +7046,12 @@ GameObject:
   - component: {fileID: 6353428015457302949}
   - component: {fileID: 6353428015457302950}
   - component: {fileID: 6353428015457302948}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015457302951
 Transform:
@@ -7142,12 +7142,12 @@ GameObject:
   - component: {fileID: 6353428015462990856}
   - component: {fileID: 6353428015462990857}
   - component: {fileID: 6353428015462990863}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bench
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015462990858
 Transform:
@@ -7238,12 +7238,12 @@ GameObject:
   - component: {fileID: 6353428015476042429}
   - component: {fileID: 6353428015476042430}
   - component: {fileID: 6353428015476042428}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015476042431
 Transform:
@@ -7334,12 +7334,12 @@ GameObject:
   - component: {fileID: 6353428015478445914}
   - component: {fileID: 6353428015478445915}
   - component: {fileID: 6353428015478445912}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Lamp (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015478445913
 Transform:
@@ -7431,12 +7431,12 @@ GameObject:
   - component: {fileID: 6353428015487481351}
   - component: {fileID: 6353428015487481344}
   - component: {fileID: 6353428015487481350}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015487481345
 Transform:
@@ -7527,12 +7527,12 @@ GameObject:
   - component: {fileID: 6353428015491938218}
   - component: {fileID: 6353428015491938219}
   - component: {fileID: 6353428015491938217}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015491938212
 Transform:
@@ -7623,12 +7623,12 @@ GameObject:
   - component: {fileID: 6353428015546091873}
   - component: {fileID: 6353428015546091874}
   - component: {fileID: 6353428015546091872}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015546091875
 Transform:
@@ -7719,7 +7719,7 @@ GameObject:
   - component: {fileID: 6353428015589262532}
   - component: {fileID: 6353428015589262533}
   - component: {fileID: 6353428015589262539}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7815,12 +7815,12 @@ GameObject:
   - component: {fileID: 6353428015613115919}
   - component: {fileID: 6353428015613115912}
   - component: {fileID: 6353428015613115918}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FanceConnector (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015613115913
 Transform:
@@ -7911,12 +7911,12 @@ GameObject:
   - component: {fileID: 6353428015629983279}
   - component: {fileID: 6353428015629983272}
   - component: {fileID: 6353428015629983278}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015629983273
 Transform:
@@ -8007,7 +8007,7 @@ GameObject:
   - component: {fileID: 6353428015656266325}
   - component: {fileID: 6353428015656266326}
   - component: {fileID: 6353428015656266331}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8103,12 +8103,12 @@ GameObject:
   - component: {fileID: 6353428015656849364}
   - component: {fileID: 6353428015656849365}
   - component: {fileID: 6353428015656849371}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015656849366
 Transform:
@@ -8199,12 +8199,12 @@ GameObject:
   - component: {fileID: 6353428015682020192}
   - component: {fileID: 6353428015682020193}
   - component: {fileID: 6353428015682020199}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015682020194
 Transform:
@@ -8295,12 +8295,12 @@ GameObject:
   - component: {fileID: 6353428015696932199}
   - component: {fileID: 6353428015696932192}
   - component: {fileID: 6353428015696932198}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015696932193
 Transform:
@@ -8391,12 +8391,12 @@ GameObject:
   - component: {fileID: 6353428015704336187}
   - component: {fileID: 6353428015704336180}
   - component: {fileID: 6353428015704336186}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015704336181
 Transform:
@@ -8487,12 +8487,12 @@ GameObject:
   - component: {fileID: 6353428015718746006}
   - component: {fileID: 6353428015718746007}
   - component: {fileID: 6353428015718746005}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Lamp (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015718746000
 Transform:
@@ -8584,7 +8584,7 @@ GameObject:
   - component: {fileID: 6353428015720710421}
   - component: {fileID: 6353428015720710422}
   - component: {fileID: 6353428015720710420}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bridge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8680,12 +8680,12 @@ GameObject:
   - component: {fileID: 6353428015739456529}
   - component: {fileID: 6353428015739456530}
   - component: {fileID: 6353428015739456528}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015739456531
 Transform:
@@ -8776,12 +8776,12 @@ GameObject:
   - component: {fileID: 6353428015740287948}
   - component: {fileID: 6353428015740287949}
   - component: {fileID: 6353428015740286003}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Fence_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015740287950
 Transform:
@@ -8872,7 +8872,7 @@ GameObject:
   - component: {fileID: 6353428015742312291}
   - component: {fileID: 6353428015742312316}
   - component: {fileID: 6353428015742312290}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8968,12 +8968,12 @@ GameObject:
   - component: {fileID: 6353428015758968531}
   - component: {fileID: 6353428015758968556}
   - component: {fileID: 6353428015758968530}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015758968557
 Transform:
@@ -9064,7 +9064,7 @@ GameObject:
   - component: {fileID: 6353428015764723314}
   - component: {fileID: 6353428015764723315}
   - component: {fileID: 6353428015764723313}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Flowers (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9160,12 +9160,12 @@ GameObject:
   - component: {fileID: 6353428015774037138}
   - component: {fileID: 6353428015774037139}
   - component: {fileID: 6353428015774037137}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FanceConnector (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015774037164
 Transform:
@@ -9256,12 +9256,12 @@ GameObject:
   - component: {fileID: 6353428015789060275}
   - component: {fileID: 6353428015789060172}
   - component: {fileID: 6353428015789060274}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015789060173
 Transform:
@@ -9352,12 +9352,12 @@ GameObject:
   - component: {fileID: 6353428015813086232}
   - component: {fileID: 6353428015813086233}
   - component: {fileID: 6353428015813086239}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015813086234
 Transform:
@@ -9448,12 +9448,12 @@ GameObject:
   - component: {fileID: 6353428015841634915}
   - component: {fileID: 6353428015841634940}
   - component: {fileID: 6353428015841634914}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015841634941
 Transform:
@@ -9544,7 +9544,7 @@ GameObject:
   - component: {fileID: 6353428015849176524}
   - component: {fileID: 6353428015849176525}
   - component: {fileID: 6353428015849176627}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Intersection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9640,12 +9640,12 @@ GameObject:
   - component: {fileID: 6353428015856265105}
   - component: {fileID: 6353428015856265106}
   - component: {fileID: 6353428015856265104}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015856265107
 Transform:
@@ -9736,12 +9736,12 @@ GameObject:
   - component: {fileID: 6353428015877516079}
   - component: {fileID: 6353428015877516072}
   - component: {fileID: 6353428015877516078}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015877516073
 Transform:
@@ -9832,12 +9832,12 @@ GameObject:
   - component: {fileID: 6353428015882543420}
   - component: {fileID: 6353428015882543421}
   - component: {fileID: 6353428015882543395}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Lamp (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015882543422
 Transform:
@@ -9929,12 +9929,12 @@ GameObject:
   - component: {fileID: 6353428015882629097}
   - component: {fileID: 6353428015882629098}
   - component: {fileID: 6353428015882629096}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Fountain1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015882629099
 Transform:
@@ -10025,7 +10025,7 @@ GameObject:
   - component: {fileID: 6353428015884443510}
   - component: {fileID: 6353428015884443511}
   - component: {fileID: 6353428015884443509}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Flowers (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10121,12 +10121,12 @@ GameObject:
   - component: {fileID: 6353428015887854061}
   - component: {fileID: 6353428015887854062}
   - component: {fileID: 6353428015887854060}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015887854063
 Transform:
@@ -10217,12 +10217,12 @@ GameObject:
   - component: {fileID: 6353428015933437968}
   - component: {fileID: 6353428015933437969}
   - component: {fileID: 6353428015933437975}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428015933437970
 Transform:
@@ -10313,7 +10313,7 @@ GameObject:
   - component: {fileID: 6353428015951099562}
   - component: {fileID: 6353428015951099563}
   - component: {fileID: 6353428015951099561}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Flowers (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10409,12 +10409,12 @@ GameObject:
   - component: {fileID: 6353428016013124416}
   - component: {fileID: 6353428016013124417}
   - component: {fileID: 6353428016013124423}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016013124418
 Transform:
@@ -10505,12 +10505,12 @@ GameObject:
   - component: {fileID: 6353428016015570238}
   - component: {fileID: 6353428016015570239}
   - component: {fileID: 6353428016015570237}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016015570232
 Transform:
@@ -10601,12 +10601,12 @@ GameObject:
   - component: {fileID: 6353428016023485305}
   - component: {fileID: 6353428016023485306}
   - component: {fileID: 6353428016023485304}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FanceConnector (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016023485307
 Transform:
@@ -10697,7 +10697,7 @@ GameObject:
   - component: {fileID: 6353428016030711158}
   - component: {fileID: 6353428016030711159}
   - component: {fileID: 6353428016030711157}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Flowers (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10793,12 +10793,12 @@ GameObject:
   - component: {fileID: 6353428016036350782}
   - component: {fileID: 6353428016036350783}
   - component: {fileID: 6353428016036350781}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016036350776
 Transform:
@@ -10889,12 +10889,12 @@ GameObject:
   - component: {fileID: 6353428016040391535}
   - component: {fileID: 6353428016040391528}
   - component: {fileID: 6353428016040391534}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016040391529
 Transform:
@@ -10985,12 +10985,12 @@ GameObject:
   - component: {fileID: 6353428016044860895}
   - component: {fileID: 6353428016044860888}
   - component: {fileID: 6353428016044860894}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016044860889
 Transform:
@@ -11081,7 +11081,7 @@ GameObject:
   - component: {fileID: 6353428016048303182}
   - component: {fileID: 6353428016048303183}
   - component: {fileID: 6353428016048303181}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_High (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11177,7 +11177,7 @@ GameObject:
   - component: {fileID: 6353428016050790351}
   - component: {fileID: 6353428016050790344}
   - component: {fileID: 6353428016050790350}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Road (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11273,12 +11273,12 @@ GameObject:
   - component: {fileID: 6353428016054410006}
   - component: {fileID: 6353428016054410007}
   - component: {fileID: 6353428016054410005}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016054410000
 Transform:
@@ -11369,12 +11369,12 @@ GameObject:
   - component: {fileID: 6353428016077441195}
   - component: {fileID: 6353428016077441188}
   - component: {fileID: 6353428016077441194}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trassh Bin (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016077441189
 Transform:
@@ -11465,12 +11465,12 @@ GameObject:
   - component: {fileID: 6353428016098471834}
   - component: {fileID: 6353428016098471835}
   - component: {fileID: 6353428016098471833}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016098471828
 Transform:
@@ -11561,12 +11561,12 @@ GameObject:
   - component: {fileID: 6353428016101300495}
   - component: {fileID: 6353428016101300488}
   - component: {fileID: 6353428016101300494}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016101300489
 Transform:
@@ -11657,7 +11657,7 @@ GameObject:
   - component: {fileID: 6353428016120481164}
   - component: {fileID: 6353428016120481165}
   - component: {fileID: 6353428016120481267}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Corner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11753,12 +11753,12 @@ GameObject:
   - component: {fileID: 6353428016145638818}
   - component: {fileID: 6353428016145638819}
   - component: {fileID: 6353428016145638817}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016145638844
 Transform:
@@ -11849,12 +11849,12 @@ GameObject:
   - component: {fileID: 6353428016146290391}
   - component: {fileID: 6353428016146290384}
   - component: {fileID: 6353428016146290390}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016146290385
 Transform:
@@ -11945,12 +11945,12 @@ GameObject:
   - component: {fileID: 6353428016151650530}
   - component: {fileID: 6353428016151650531}
   - component: {fileID: 6353428016151650529}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016151650556
 Transform:
@@ -12041,12 +12041,12 @@ GameObject:
   - component: {fileID: 6353428016167080990}
   - component: {fileID: 6353428016167080991}
   - component: {fileID: 6353428016167080989}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016167080984
 Transform:
@@ -12137,12 +12137,12 @@ GameObject:
   - component: {fileID: 6353428016170705066}
   - component: {fileID: 6353428016170705067}
   - component: {fileID: 6353428016170705065}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016170705060
 Transform:
@@ -12233,7 +12233,7 @@ GameObject:
   - component: {fileID: 6353428016186890326}
   - component: {fileID: 6353428016186890327}
   - component: {fileID: 6353428016186890325}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Flowers (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12329,7 +12329,7 @@ GameObject:
   - component: {fileID: 6353428016194504277}
   - component: {fileID: 6353428016194504278}
   - component: {fileID: 6353428016194504276}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GrassTile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12425,12 +12425,12 @@ GameObject:
   - component: {fileID: 6353428016194548254}
   - component: {fileID: 6353428016194548255}
   - component: {fileID: 6353428016194548253}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016194548248
 Transform:
@@ -12521,12 +12521,12 @@ GameObject:
   - component: {fileID: 6353428016197769466}
   - component: {fileID: 6353428016197769467}
   - component: {fileID: 6353428016197769465}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_4 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016197769460
 Transform:
@@ -12617,12 +12617,12 @@ GameObject:
   - component: {fileID: 6353428016212798046}
   - component: {fileID: 6353428016212798047}
   - component: {fileID: 6353428016212798045}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016212798040
 Transform:
@@ -12713,12 +12713,12 @@ GameObject:
   - component: {fileID: 6353428016217781517}
   - component: {fileID: 6353428016217781518}
   - component: {fileID: 6353428016217781516}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016217781519
 Transform:
@@ -12809,12 +12809,12 @@ GameObject:
   - component: {fileID: 6353428016251175812}
   - component: {fileID: 6353428016251175813}
   - component: {fileID: 6353428016251175819}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FanceConnector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016251175814
 Transform:
@@ -12905,7 +12905,7 @@ GameObject:
   - component: {fileID: 6353428016267577981}
   - component: {fileID: 6353428016267577982}
   - component: {fileID: 6353428016267577980}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GrassTile (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13001,12 +13001,12 @@ GameObject:
   - component: {fileID: 6353428016284704042}
   - component: {fileID: 6353428016284704043}
   - component: {fileID: 6353428016284704041}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016284704036
 Transform:
@@ -13097,12 +13097,12 @@ GameObject:
   - component: {fileID: 6353428016298940149}
   - component: {fileID: 6353428016298940150}
   - component: {fileID: 6353428016298940148}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bush (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016298940151
 Transform:
@@ -13193,12 +13193,12 @@ GameObject:
   - component: {fileID: 6353428016336423725}
   - component: {fileID: 6353428016336423726}
   - component: {fileID: 6353428016336423724}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016336423727
 Transform:
@@ -13289,7 +13289,7 @@ GameObject:
   - component: {fileID: 6353428016337917497}
   - component: {fileID: 6353428016337917498}
   - component: {fileID: 6353428016337917496}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Intersection2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13385,12 +13385,12 @@ GameObject:
   - component: {fileID: 6353428016355416160}
   - component: {fileID: 6353428016355416161}
   - component: {fileID: 6353428016355416167}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016355416162
 Transform:
@@ -13481,7 +13481,7 @@ GameObject:
   - component: {fileID: 6353428016375806594}
   - component: {fileID: 6353428016375806595}
   - component: {fileID: 6353428016375806593}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_High (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13577,12 +13577,12 @@ GameObject:
   - component: {fileID: 6353428016390805090}
   - component: {fileID: 6353428016390805091}
   - component: {fileID: 6353428016390805089}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016390805116
 Transform:
@@ -13673,7 +13673,7 @@ GameObject:
   - component: {fileID: 6353428016410590758}
   - component: {fileID: 6353428016410590759}
   - component: {fileID: 6353428016410590757}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GrassTile (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13769,12 +13769,12 @@ GameObject:
   - component: {fileID: 6353428016412515751}
   - component: {fileID: 6353428016412515744}
   - component: {fileID: 6353428016412515750}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Fence_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016412515745
 Transform:
@@ -13865,12 +13865,12 @@ GameObject:
   - component: {fileID: 6353428016426350275}
   - component: {fileID: 6353428016426350300}
   - component: {fileID: 6353428016426350274}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_3 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016426350301
 Transform:
@@ -13961,12 +13961,12 @@ GameObject:
   - component: {fileID: 6353428016430653840}
   - component: {fileID: 6353428016430653841}
   - component: {fileID: 6353428016430653847}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rock (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016430653842
 Transform:
@@ -14057,7 +14057,7 @@ GameObject:
   - component: {fileID: 6353428016440551766}
   - component: {fileID: 6353428016440551767}
   - component: {fileID: 6353428016440551765}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Corner (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14153,12 +14153,12 @@ GameObject:
   - component: {fileID: 6353428016454647472}
   - component: {fileID: 6353428016454647473}
   - component: {fileID: 6353428016454647479}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trassh Bin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016454647474
 Transform:
@@ -14249,7 +14249,7 @@ GameObject:
   - component: {fileID: 6353428016456118115}
   - component: {fileID: 6353428016456118140}
   - component: {fileID: 6353428016456118114}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tile_Corner (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14345,12 +14345,12 @@ GameObject:
   - component: {fileID: 6353428016469808361}
   - component: {fileID: 6353428016469808362}
   - component: {fileID: 6353428016469808360}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tree_5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016469808363
 Transform:
@@ -14441,12 +14441,12 @@ GameObject:
   - component: {fileID: 6353428016520994255}
   - component: {fileID: 6353428016520994248}
   - component: {fileID: 6353428016520994254}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016520994249
 Transform:
@@ -14537,12 +14537,12 @@ GameObject:
   - component: {fileID: 6353428016541219456}
   - component: {fileID: 6353428016541219457}
   - component: {fileID: 6353428016541219463}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: WaterTile. (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6353428016541219458
 Transform:
@@ -14630,7 +14630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6422937539424265200}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Walkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14691,23 +14691,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 92bad9ac7bb39fa4d9ce8fc2d181f64f, type: 3}
       propertyPath: m_LocalPosition.x
