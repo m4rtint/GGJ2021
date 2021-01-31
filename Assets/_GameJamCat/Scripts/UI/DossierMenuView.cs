@@ -12,6 +12,9 @@ namespace GameJamCat
         private const string DossierText = "likes {0}";
         private const float AnimationDuration = 0.5f;
 
+        [Title("Placeholder Values")]
+        [SerializeField] private Texture2D _defaultTex;
+
         [Title("Poster Cat Image")]
         [SerializeField] private RawImage _catImage = null;
         [Title("Name")]
@@ -24,21 +27,27 @@ namespace GameJamCat
         [SerializeField] private TMP_Text _cativities = null;
 
         [Title("Sprites")]
-        [SerializeField] Sprite _tunaIcon, _salmonIcon, _chickenIcon, _pumpkinIcon, _dryKibbleIcon, _wetKibbleIcon, _kibbleIcon, _boneIcon, _beefIcon = null;
+        [SerializeField] Sprite _tunaIcon;
+        [SerializeField] Sprite _salmonIcon, _chickenIcon, _pumpkinIcon, _dryKibbleIcon, _wetKibbleIcon, _kibbleIcon, _boneIcon, _beefIcon = null;
         [SerializeField] Sprite _yarnBallsIcon, _cardboardBoxIcon, _fishingRodIcon, _catnipSackIcon, _hijinksIcon, _scratchingPostIcon, _laserIcon, _tennisBall = null;
 
         private float _animationDossierDistance = 0;
         
         //Tentative Use Case from UI Manager
-        public void Initialize(CatCustomisation catDescription, Texture2D catimage = null)
+        public void SetNewCat(CatCustomisation catDescription, Texture2D catimage = null)
         {
             var food = GetFoodSprite(catDescription._food);
             var cativities = GetToySprite(catDescription._toy);
             SetName(catDescription._catName);
             SetUIElement(_catLikes, food.Item2);
+            SetUIElement(_catLikesImage, food.Item1);
             SetUIElement(_cativities, cativities.Item2);
+            SetUIElement(_catActivitiesImage, cativities.Item1);
             SetUIElement(_catImage, catimage);
-            
+        }
+
+        public void Initialize()
+        {
             var rectTransform = GetComponent<RectTransform>();
             // Top
             rectTransform.offsetMax = new Vector2(rectTransform.offsetMax.x, -_animationDossierDistance);
@@ -76,6 +85,14 @@ namespace GameJamCat
             }
         }
 
+        private void SetUIElement(Image element, Sprite image)
+        {
+            if (element != null && image != null)
+            {
+                element.sprite = image;
+            }
+        }
+
         private void Awake()
         {
             _animationDossierDistance = Screen.height * 0.9f;
@@ -85,15 +102,15 @@ namespace GameJamCat
         {
             return food switch
             {
-                Food.Tuna => (_tunaIcon, "Tuna"),
-                Food.Salmon => (_salmonIcon, "Salmon"),
-                Food.Chicken => (_chickenIcon, "Chicken"),
-                Food.Pumpkin => (_pumpkinIcon, "Pumpkin"),
-                Food.DryKibble => (_dryKibbleIcon, "Dry Kibble"),
-                Food.WetKibble => (_wetKibbleIcon,"Wet Kibble"),
-                Food.Kibble => (_kibbleIcon,"Kibble"),
-                Food.Bones => (_boneIcon,"Bone"),
-                Food.Beef => (_beefIcon,"Beef"),
+                Food.Tuna => (_tunaIcon, "TUNA"),
+                Food.Salmon => (_salmonIcon, "SALMON"),
+                Food.Chicken => (_chickenIcon, "CHICKEN"),
+                Food.Pumpkin => (_pumpkinIcon, "PUMPKIN"),
+                Food.DryKibble => (_dryKibbleIcon, "DRY KIBBLE"),
+                Food.WetKibble => (_wetKibbleIcon,"WET KIBBLE"),
+                Food.Kibble => (_kibbleIcon,"KIBBLE"),
+                Food.Bones => (_boneIcon,"BONE"),
+                Food.Beef => (_beefIcon,"BEEF"),
                 _ => (null,null)
             };
         }
@@ -102,14 +119,14 @@ namespace GameJamCat
         {
             return toy switch
             {
-                Toy.YarnBalls => (_yarnBallsIcon,"Yarn Balls"),
-                Toy.Hijinks => (_hijinksIcon, "Hijinks"),
-                Toy.CardboardBox => (_cardboardBoxIcon, "Cardboard Box"),
-                Toy.FishingRod => (_fishingRodIcon, "Fishing Rod"),
-                Toy.CatnipSack => (_catnipSackIcon, "Catnip Sack"),
-                Toy.ScratchingPost => (_scratchingPostIcon, "Scratching Post"),
-                Toy.TennisBall => (_tennisBall, "Tennis Ball"),
-                Toy.Laser => (_laserIcon, "Laser"),
+                Toy.YarnBalls => (_yarnBallsIcon,"YARN"),
+                Toy.Hijinks => (_hijinksIcon, "HIJINKS"),
+                Toy.CardboardBox => (_cardboardBoxIcon, "A BOX"),
+                Toy.FishingRod => (_fishingRodIcon, "FISHING"),
+                Toy.CatnipSack => (_catnipSackIcon, "CATNIP"),
+                Toy.ScratchingPost => (_scratchingPostIcon, "A POST"),
+                Toy.TennisBall => (_tennisBall, "TENNIS"),
+                Toy.Laser => (_laserIcon, "LASER"),
                 _ => (null, null)
             };
         }
