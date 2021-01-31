@@ -1,4 +1,3 @@
-using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -16,11 +15,9 @@ namespace GameJamCat
         [SerializeField] private PlayerController _playerController = null;
         [SerializeField] private CatManager _catManager = null;
         [SerializeField] private UIManager _uiManager = null;
-
-        private const float MaxTime = 120f;
-        private float _currentTime = 0f;
-        private bool _hasTimerRunOut = false;
         
+        private float _currentTime = 120f;
+
         public int Lives
         {
             get => _lives;
@@ -52,25 +49,28 @@ namespace GameJamCat
 
         private void Update()
         {
-            if (_hasTimerRunOut)
+            State currentState = _stateManager.GetState();
+            if (currentState != State.Dialogue && currentState != State.Play)
             {
-                if (_stateManager.GetState() != State.EndGame)
-                {
-                    _stateManager.SetState(State.EndGame);
-                }
+                return;
             }
 
-            _currentTime += Time.deltaTime;
-            HasTimeRunOut();
+            if (HasTimeRunOut())
+            {
+                _stateManager.SetState(State.EndGame);
+                return;
+            }
+
+            _currentTime -= Time.deltaTime;
             if (_uiManager != null)
             {
                 _uiManager.UpdateTimer(_currentTime);
             }
         }
 
-        private void HasTimeRunOut()
+        private bool HasTimeRunOut()
         {
-            _hasTimerRunOut = _currentTime >= MaxTime;
+            return _currentTime <= 0;
         }
 
         private void OnDisable()
