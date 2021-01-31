@@ -8,11 +8,14 @@ namespace GameJamCat
         private readonly IStateManager _stateManager = StateManager.Instance;
         
         [SerializeField] private DossierViewBehaviour _dossierView = null;
+        [SerializeField] private ActionBoxBehavior _actionBoxView = null;
+
         [SerializeField] private ScreenTransitionViewBehaviour _transitionViewBehaviour = null;
         [SerializeField] private EndGameMenu _endgameViewBehaviour = null;
         [SerializeField] private TimerUI _timer = null;
         [SerializeField] private GameObject _crossHair = null;
         [SerializeField] private LivesViewBehaviour _livesView = null;
+
         
         /// <summary>
         /// Initialize UIManager, setup values here
@@ -130,6 +133,15 @@ namespace GameJamCat
                 _dossierView.SetInstructionLabel(false);
                 _dossierView.SetPressToOpenCloseText();
             } 
+
+            if(_actionBoxView !=null)
+            {
+                if(!_actionBoxView.IsActionBoxOpen)
+                {
+                    _actionBoxView.IsActionBoxOpen = true;
+                    _actionBoxView.UpdateActionBoxView();
+                }
+            }
         }
         
         private void OnEndGameSet()

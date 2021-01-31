@@ -54,7 +54,7 @@ namespace GameJamCat
                     {
                         while (visibleCounter < subTexts[subCounter].Length)
                         {
-                            
+
                             visibleCounter++;
                             maxVisibleCharacters++;
                             yield return new WaitForSeconds(1f / _speed);
