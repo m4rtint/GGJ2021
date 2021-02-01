@@ -108,6 +108,11 @@ namespace GameJamCat {
             }
         }
 
+        private void OnDisable()
+        {
+            _dialogueBoxBehaviour.OnReadCompleted -= ShrinkDialogueAndReturnToOptions;
+        }
+
         protected void LateUpdate()
         {
             var firstPersonCamera = playerCamera as FirstPersonCamera;
