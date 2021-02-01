@@ -1,4 +1,6 @@
 using System;
+using DG.Tweening;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GameJamCat
@@ -7,25 +9,40 @@ namespace GameJamCat
     {
         private readonly IStateManager _stateManager = StateManager.Instance;
         
-        [SerializeField] private DossierViewBehaviour _dossierView = null;
+        [Title("Screen Transition")]
         [SerializeField] private ScreenTransitionViewBehaviour _transitionViewBehaviour = null;
+        [SerializeField] private PregameDialogueBoxBehaviour _pregameDialogueBox = null;
+        
+        [Title("Dossier")]
+        [SerializeField] private DossierViewBehaviour _dossierView = null;
+        
+        [Title("End Game")]
         [SerializeField] private EndGameMenu _endgameViewBehaviour = null;
+        
+        [Title("HUD View")]
         [SerializeField] private TimerUI _timer = null;
         [SerializeField] private GameObject _crossHair = null;
         [SerializeField] private LivesViewBehaviour _livesView = null;
+        [SerializeField] private GameObject _crossHairText = null;
         
         /// <summary>
         /// Initialize UIManager, setup values here
         /// </summary>
         public void Initialize(int lives)
         {
+            _stateManager.OnStateChanged += HandleOnStateChange;
+            
             if (_dossierView != null)
             {
                 _dossierView.Initialize();
                 _dossierView.OnDossierStateChange += HandleOnDossierStateChange;
             }
-            
-            _stateManager.OnStateChanged += HandleOnStateChange;
+
+            if (_pregameDialogueBox != null)
+            {
+                _pregameDialogueBox.Initialize();
+                _pregameDialogueBox.OnDialogueCompleted += HandleOnDialogueCompleted;
+            }
             
             if (_transitionViewBehaviour != null)
             {
@@ -46,9 +63,11 @@ namespace GameJamCat
             {
                 _timer.Initialize();
             }
-
+            _crossHairText.SetActive(false);
             SetLives(lives);
         }
+
+
 
         public void UpdateTimer(float time)
         {
@@ -88,8 +107,25 @@ namespace GameJamCat
 
         public void SetUpDossier(CatBehaviour targetCat)
         {
-            _dossierView.SetTargetCat(targetCat.CatDialogue);
+            if(_dossierView != null)
+            {
+                _dossierView.SetTargetCat(targetCat.CatDialogue);
+            }
         }
+
+        public void SetUpDossierTexture(Texture catTex)
+        {
+            if(_dossierView != null)
+            {
+                _dossierView.SetCatImage(catTex);
+            }
+        }
+
+        public void SetCrossHairTextState(bool state)
+        {
+            _crossHairText.SetActive(state);
+        }
+        
 
         private void OnDestroy()
         {
@@ -99,11 +135,13 @@ namespace GameJamCat
         #region StateChanges
         private void OnPregameSet()
         {
-            if (_transitionViewBehaviour != null) 
-            { 
-                _transitionViewBehaviour.SwitchBlackScreen(true); 
-            }
-
+#if UNITY_EDITOR
+            HandleOnDialogueCompleted();
+#endif
+            
+#if !UNITY_EDITOR
+            _pregameDialogueBox.StartAnimation();
+#endif
             SetCrossHairState(false);
         }
 
@@ -174,6 +212,14 @@ namespace GameJamCat
         private void HandleOnDossierStateChange(bool isOpen)
         {
             SetCrossHairState(!isOpen);
+        }
+        
+        private void HandleOnDialogueCompleted()
+        {
+            if (_transitionViewBehaviour != null) 
+            { 
+                _transitionViewBehaviour.SwitchBlackScreen(true); 
+            }
         }
         #endregion 
     }

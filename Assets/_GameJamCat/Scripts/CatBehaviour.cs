@@ -1,4 +1,7 @@
 using Cinemachine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -13,12 +16,15 @@ namespace GameJamCat
         private const string PlayerConstant = "Player";
         private PlayableDirector _playableDirector;
         private CinemachineVirtualCamera _playerVirtualCamera;
+        [SerializeField] Transform[] _renderTextureCamLocations;
 
         [SerializeField] private AudioSource _source;
 
         public Renderer CatRenderer { get; private set; }
 
         public CatCustomisation CatDialogue { get => _catDialogue; set => _catDialogue = value; }
+
+        public Texture2D CatScreenshot { get; private set; } = null;
 
         /// <summary>
         /// Called by the CatManager when a cat is grabbed from the pool
@@ -43,7 +49,7 @@ namespace GameJamCat
         {
             CatRenderer = GetComponentInChildren<Renderer>();
             _playableDirector = GetComponent<PlayableDirector>();
-            
+
             if (_source != null)
             {
                 _source.pitch = Random.Range(-3f, 3f);
@@ -81,6 +87,11 @@ namespace GameJamCat
             }
         }
 
+        public void ActivatePet()
+        {
+            Debug.Log("Pet pet pet ");
+        }
+
         /// <summary>
         /// Begins player Conversation With Cat
         /// </summary>
@@ -104,5 +115,11 @@ namespace GameJamCat
         {
             _playableDirector.Pause();
         }
+
+        public Transform GetCameraLocation()
+        {
+            return Utilities.GetRandom(_renderTextureCamLocations);
+        }
+
     }
 }

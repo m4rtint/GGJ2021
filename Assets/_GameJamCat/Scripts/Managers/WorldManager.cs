@@ -33,6 +33,7 @@ namespace GameJamCat
             if (_catManager != null)
             {
                 _catManager.OnGeneratedSelectedCatToFind += HandleOnGeneratedSelectedCatToFind;
+                _catManager.OnGeneratedCatTexture += HandleOnGeneratedCatTexture;
                 _catManager.Initialize();
             }
 
@@ -44,6 +45,8 @@ namespace GameJamCat
             if (_playerController != null)
             {
                 _playerController.OnEndConversation += HandleOnEndConversation;
+                _playerController.LookingAtCat += HandleShowCrossHairText;
+                _playerController.NotLookingAtCat += HandleHideCrossHairText;
             }
         }
 
@@ -84,6 +87,7 @@ namespace GameJamCat
             {
                 _catManager.CleanUp();
                 _catManager.OnGeneratedSelectedCatToFind -= HandleOnGeneratedSelectedCatToFind;
+                _catManager.OnGeneratedCatTexture -= HandleOnGeneratedCatTexture;
             }
 
             if (_uiManager != null)
@@ -98,10 +102,25 @@ namespace GameJamCat
             _uiManager.SetUpDossier(cat);
         }
 
+        private void HandleOnGeneratedCatTexture(Texture tex)
+        {
+            _uiManager.SetUpDossierTexture(tex);
+        }
+
         private void HandleOnEndConversation()
         {
             _uiManager.SetCrossHairState(true);
         }
+
+        private void HandleShowCrossHairText()
+        {
+            _uiManager.SetCrossHairTextState(true);
+        }
+
+        private void HandleHideCrossHairText()
+        {
+            _uiManager.SetCrossHairTextState(false);
+        } 
         #endregion
     }
 }
