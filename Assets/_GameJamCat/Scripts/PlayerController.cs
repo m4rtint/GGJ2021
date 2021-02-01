@@ -215,7 +215,7 @@ namespace GameJamCat {
         {
             if (_currentCatInFocus != null)
             {
-                _dialogueBoxBehaviour.SetCatNameInDialogueBox(_currentCatInFocus.CatDialogue._catName);
+                //_dialogueBoxBehaviour.SetCatNameInDialogueBox(_currentCatInFocus.CatDialogue._catName);
             }
         }
 
