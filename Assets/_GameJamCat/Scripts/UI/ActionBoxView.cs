@@ -1,122 +1,97 @@
 using System;
-using DG.Tweening;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace GameJamCat
 {
     public class ActionBoxView : MonoBehaviour
     {
-        private const float AnimationDuration = 0.5f;
-        private float _animationActionBoxDistance = 0;
+        private const string OpenLabel = "open";
+        private const string CloseLabel = "close";
+        //private const string InstructionalLabel = "Press {0} to {1} Dossier";
 
-        [Title("CatNameBox")]
-        [SerializeField]
-        private Image _catNameBox = null;
+        [SerializeField] private ActionBoxMenu _actionMenu = null;
+        //[SerializeField] private TMP_Text _pressToOpenClose = null;
 
-        [Title("CatName")]
-        [SerializeField]
-        private TMP_Text _catName = null;
+        //[Title("Properties")]
+        //[SerializeField] private KeyCode _dossierButton = KeyCode.Tab;
 
-        [Title("ActionBox")]
-        [SerializeField]
-        private Image _actionBoard = null;
+        private bool _isActionBoxOpen = true;
 
-        [Title("ChatButton")]
-        [SerializeField]
-        private Image _chatButton = null;
-        
-        [Title("ClaimButton")]
-        [SerializeField]
-        private Image _claimButton = null;
+        public event Action<bool> OnActionBoxStateChange;
 
-        [Title("ClaimText")]
-        [SerializeField]
-        private TMP_Text _claimText = null;
+        public bool IsActionBoxOpen
+        {
+            get => _isActionBoxOpen;
+            set
+            {
+                _isActionBoxOpen = value;
+                if (OnActionBoxStateChange != null)
+                {
+                    OnActionBoxStateChange(_isActionBoxOpen);
+                }
+            }
+        }
 
-        [Title("ChatText")]
-        [SerializeField]
-        private TMP_Text _chatText = null;
-
-        //[Title("Placeholder Values")]
-        //[SerializeField] private Texture2D _defaultTex;
-
-        //[Title("Poster Cat Image")]
-        //[SerializeField] private RawImage _catImage = null;
-        //[Title("Name")]
-        //[SerializeField] private TMP_Text _catName = null;
-        //[Title("Likes")]
-        //[SerializeField] private Image _catLikesImage = null;
-        //[SerializeField] private TMP_Text _catLikes = null;
-        //[Title("Cativities")]
-        //[SerializeField] private Image _catActivitiesImage = null;
-        //[SerializeField] private TMP_Text _cativities = null;
-
-        //[Title("Sprites")]
-        //[SerializeField] Sprite _tunaIcon;
-        //[SerializeField] Sprite _salmonIcon, _chickenIcon, _pumpkinIcon, _dryKibbleIcon, _wetKibbleIcon, _kibbleIcon, _boneIcon, _beefIcon = null;
-        //[SerializeField] Sprite _yarnBallsIcon, _cardboardBoxIcon, _fishingRodIcon, _catnipSackIcon, _hijinksIcon, _scratchingPostIcon, _laserIcon, _tennisBall = null;
-
-        //private float _animationDossierDistance = 0;
-
-        //Tentative Use Case from UI Manager
-        public void SetNewCat(CatCustomisation catCustomisation)
-        {        
-            SetName(catCustomisation._catName);
+        public void SetTargetCat(CatCustomisation catCustomization)
+        {
+            if (_actionMenu != null)
+            {
+                _actionMenu.SetNewCat(catCustomization);
+            }
         }
 
         public void Initialize()
         {
-            var rectTransform = GetComponent<RectTransform>();
-            // Top
-            rectTransform.offsetMax = new Vector2(rectTransform.offsetMax.x, -_animationActionBoxDistance);
-            // Bottom
-            rectTransform.offsetMin = new Vector2(rectTransform.offsetMin.x, -_animationActionBoxDistance);
-        }
-
-        public void SetActionBoxOpen(bool isCurrentlyOpen)
-        {
-            var moveDirection = isCurrentlyOpen ? Vector3.up : Vector3.down;
-            transform.DOBlendableLocalMoveBy(moveDirection * _animationActionBoxDistance, AnimationDuration, true);
-        }
-
-        private void SetName(string catName)
-        {
-            if (_catName != null)
+            if (_actionMenu != null)
             {
-                _catName.text = catName;
+                _actionMenu.Initialize();
+                _actionMenu.SetActionBoxOpen(_isActionBoxOpen);
+            }
+
+            TriggerOpenCloseText();
+        }
+
+        public void TriggerOpenCloseText()
+        {
+            var openOrClose = IsActionBoxOpen ? CloseLabel : OpenLabel;
+            
+        }
+
+        public void UpdateActionBoxView()
+        {
+            if (_actionMenu != null)
+            {
+                _actionMenu.SetActionBoxOpen(_isActionBoxOpen);
             }
         }
 
-        //private void SetUIElement(TMP_Text element, string label)
+        ///// <summary>
+        ///// Set Instruction Label
+        ///// </summary>
+        ///// <param name="turnOn">turn on off label</param>
+        //public void SetInstructionLabel(bool turnOn)
         //{
-        //    if (element != null && !string.IsNullOrEmpty(label))
+        //    if (_pressToOpenClose != null)
         //    {
-        //        element.text = string.Format(ActionBoardText, label);
+        //        _pressToOpenClose.gameObject.SetActive(turnOn);
         //    }
         //}
 
-        private void SetUIElement(RawImage element, Texture2D image)
+        public void CleanUp()
         {
-            if (element != null && image != null)
-            {
-                element.texture = image;
-            }
+
         }
 
-        private void SetUIElement(Image element, Sprite image)
+        private void Update()
         {
-            if (element != null && image != null)
-            {
-                element.sprite = image;
-            }
+            IsActionBoxOpen = (StateManager.Instance.GetState() == State.Dialogue);
+            UpdateActionBoxView();
         }
 
-        private void Awake()
-        {
-            _animationActionBoxDistance = Screen.height * 0.9f;
-        }
+
+
     }
 }
+

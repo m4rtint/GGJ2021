@@ -11,7 +11,9 @@ namespace GameJamCat
 
         [SerializeField] private DossierViewBehaviour _dossierView = null;
         [SerializeField] private ActionBoxBehavior _actionBoxView = null;
+        [SerializeField] private ActionBoxView _actionBoxView = null;
 
+        [Title("Screen Transition")]
 
         [SerializeField] private ScreenTransitionViewBehaviour _transitionViewBehaviour = null;
         [SerializeField] private PregameDialogueBoxBehaviour _pregameDialogueBox = null;
