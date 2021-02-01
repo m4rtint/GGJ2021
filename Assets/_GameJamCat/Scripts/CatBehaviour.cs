@@ -47,7 +47,7 @@ namespace GameJamCat
             if (_source != null)
             {
                 _source.pitch = Random.Range(-3f, 3f);
-                _source.volume = Random.Range(0f, 1f);
+                _source.volume = Random.Range(0.5f, 1f);
             }
         }
 
