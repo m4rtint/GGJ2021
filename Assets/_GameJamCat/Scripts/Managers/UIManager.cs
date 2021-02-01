@@ -29,6 +29,7 @@ namespace GameJamCat
         [SerializeField] private LivesViewBehaviour _livesView = null;
 
         [SerializeField] private GameObject _crossHairText = null;
+        [SerializeField] private PlayerController _player = null; //I'm sorry for doing this I know its terrible
 
         /// <summary>
         /// Initialize UIManager, setup values here
@@ -70,6 +71,7 @@ namespace GameJamCat
             }
             _crossHairText.SetActive(false);
             SetLives(lives);
+            _player.OnTalkToCat += HandleTalkToCat;
         }
 
 
@@ -196,6 +198,10 @@ namespace GameJamCat
         #endregion
 
         #region Delegate
+        private void HandleTalkToCat(CatBehaviour cat)
+        {
+            Debug.Log("Cat focuses");
+        }
 
         private void HandleOnStateChange(State state)
         {
