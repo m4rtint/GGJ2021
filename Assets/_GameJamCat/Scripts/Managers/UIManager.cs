@@ -9,8 +9,7 @@ namespace GameJamCat
     {
         private readonly IStateManager _stateManager = StateManager.Instance;
 
-        [SerializeField] private DossierViewBehaviour _dossierView = null;
-        [SerializeField] private ActionBoxBehavior _actionBoxView = null;
+        [SerializeField] private ActionBoxMenu _actionBoxMenu = null;
         [SerializeField] private ActionBoxView _actionBoxView = null;
 
         [Title("Screen Transition")]
