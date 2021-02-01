@@ -20,9 +20,11 @@ namespace GameJamCat
 
         private List<CatBehaviour> _activeCats;
         private CatBehaviour _chosenCatToFind = null;
+        private CatBehaviour _catinfocus = null;
 
         public event Action<CatBehaviour> OnGeneratedSelectedCatToFind;
-        
+        public event Action<CatBehaviour> OnFocusedCat;
+                
         /// <summary>
         /// Initializes the CatManager
         /// </summary>
@@ -31,6 +33,14 @@ namespace GameJamCat
             _activeCats = new List<CatBehaviour>();
             SpawnCats();
             StoreRandomCatToFind();
+        }
+
+        /// <summary>
+        /// Sets the cat in focus
+        /// </summary>
+        public void SetFocusedCat(CatBehaviour cat)
+        {
+            _catinfocus = cat;
         }
 
         /// <summary>
@@ -78,8 +88,22 @@ namespace GameJamCat
                 GetRandomCat();
             }
         }
-
-
+        
+        [Button]
+        public bool ClaimCat()
+        {
+            if (_catinfocus != null)
+            {
+                if (_chosenCatToFind != null)
+                {
+                    if (object.Equals(_catinfocus, _chosenCatToFind))
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
     }
 
     public interface ICatFactory
@@ -88,4 +112,6 @@ namespace GameJamCat
 
         void DestroyCat(CatBehaviour cat);
     }
+
+    
 }

@@ -33,6 +33,7 @@ namespace GameJamCat
             if (_catManager != null)
             {
                 _catManager.OnGeneratedSelectedCatToFind += HandleOnGeneratedSelectedCatToFind;
+                _catManager.OnFocusedCat += HandleOnFocusedCat;
                 _catManager.Initialize();
             }
 
@@ -84,6 +85,7 @@ namespace GameJamCat
             {
                 _catManager.CleanUp();
                 _catManager.OnGeneratedSelectedCatToFind -= HandleOnGeneratedSelectedCatToFind;
+                _catManager.OnFocusedCat -= HandleOnFocusedCat;
             }
 
             if (_uiManager != null)
@@ -101,6 +103,11 @@ namespace GameJamCat
         private void HandleOnEndConversation()
         {
             _uiManager.SetCrossHairState(true);
+        }
+
+        private void HandleOnFocusedCat(CatBehaviour cat)
+        {
+            _catManager.SetFocusedCat(cat);
         }
         #endregion
     }

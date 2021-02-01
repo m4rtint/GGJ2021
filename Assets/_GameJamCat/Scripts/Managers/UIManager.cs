@@ -143,7 +143,7 @@ namespace GameJamCat
                 }
             }
         }
-        
+
         private void OnEndGameSet()
         {
             SetCrossHairState(false);
