@@ -75,6 +75,13 @@ namespace GameJamCat {
                 playerCharacter.Simulate(characterController, input);
             if (_cameraAnimationInProgress == false)
                 FocusObjectUpdate();
+            if (_lookingAtCat == true && _currentCatInFocus != null)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    _currentCatInFocus.ActivatePet();
+                }
+            }
         }
 
         protected void LateUpdate()
@@ -110,20 +117,25 @@ namespace GameJamCat {
                     {
                         LookingAtCat();
                         _lookingAtCat = true;
+                        _currentCatInFocus = hit.collider.GetComponent<CatBehaviour>();
                     }
                     // Fire other event here that could highlite the cross hair 
                     // Thas UX babey 
                     if (Input.GetKeyDown(KeyCode.Mouse1))
                     {
-                        _currentCatInFocus = hit.collider.GetComponent<CatBehaviour>();
-                        _currentCatInFocus.BeginConversation();
-                        _cameraAnimationInProgress = true;
+                        if (_currentCatInFocus != null)
+                        {
+                            _currentCatInFocus.BeginConversation();
+                            _cameraAnimationInProgress = true;
+                        }
+                       
                     }
                 }
                 else
                 {
                     NotLookingAtCat();
                     _lookingAtCat = false;
+                    _currentCatInFocus = null;
                 }
             }
         }
