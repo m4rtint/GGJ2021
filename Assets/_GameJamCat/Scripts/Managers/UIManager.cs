@@ -8,7 +8,7 @@ namespace GameJamCat
         private readonly IStateManager _stateManager = StateManager.Instance;
         
         [SerializeField] private DossierViewBehaviour _dossierView = null;
-        [SerializeField] private ActionBoxBehavior _actionBoxView = null;
+        [SerializeField] private ActionBoxView _actionBoxView = null;
 
         [SerializeField] private ScreenTransitionViewBehaviour _transitionViewBehaviour = null;
         [SerializeField] private EndGameMenu _endgameViewBehaviour = null;
