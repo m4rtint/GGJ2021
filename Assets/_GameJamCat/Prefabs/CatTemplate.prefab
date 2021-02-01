@@ -24,8 +24,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4579945608335828976}
-  m_LocalRotation: {x: 0.029380307, y: 0.970033, z: -0.15255994, w: 0.18681093}
-  m_LocalPosition: {x: -0.31999946, y: 0.46, z: 0.9500005}
+  m_LocalRotation: {x: 0.02938033, y: 0.970033, z: -0.15255985, w: 0.18681121}
+  m_LocalPosition: {x: -0.3199997, y: 0.46, z: 0.95000076}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6013295563037192757}
@@ -2279,6 +2279,7 @@ MonoBehaviour:
     _food: 0
     _toy: 0
     _flavourText: 
+  _source: {fileID: 8337438218971809704}
 --- !u!320 &5422291744170338466
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -2296,6 +2297,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -2600295912538440650, guid: ac20547ed50461c439225f3d04a42bf6, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 7978318306839924471, guid: ac20547ed50461c439225f3d04a42bf6, type: 2}
+    value: {fileID: 8337438218971809704}
   m_ExposedReferences:
     m_References:
     - 2542e845654166940b0788e62e035bf5: {fileID: 9188930570117432204}

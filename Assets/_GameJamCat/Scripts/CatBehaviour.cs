@@ -1,8 +1,7 @@
 using Cinemachine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+
 
 namespace GameJamCat
 {
@@ -14,6 +13,8 @@ namespace GameJamCat
         private const string PlayerConstant = "Player";
         private PlayableDirector _playableDirector;
         private CinemachineVirtualCamera _playerVirtualCamera;
+
+        [SerializeField] private AudioSource _source;
 
         public Renderer CatRenderer { get; private set; }
 
@@ -42,6 +43,12 @@ namespace GameJamCat
         {
             CatRenderer = GetComponentInChildren<Renderer>();
             _playableDirector = GetComponent<PlayableDirector>();
+            
+            if (_source != null)
+            {
+                _source.pitch = Random.Range(-3f, 3f);
+                _source.volume = Random.Range(0f, 1f);
+            }
         }
 
         private void Start()
