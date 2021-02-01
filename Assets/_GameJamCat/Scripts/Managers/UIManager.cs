@@ -1,4 +1,6 @@
 using System;
+using DG.Tweening;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GameJamCat
@@ -6,30 +8,46 @@ namespace GameJamCat
     public class UIManager : MonoBehaviour
     {
         private readonly IStateManager _stateManager = StateManager.Instance;
-        
+
         [SerializeField] private DossierViewBehaviour _dossierView = null;
         [SerializeField] private ActionBoxBehavior _actionBoxView = null;
 
+
         [SerializeField] private ScreenTransitionViewBehaviour _transitionViewBehaviour = null;
+        [SerializeField] private PregameDialogueBoxBehaviour _pregameDialogueBox = null;
+
+        [Title("Dossier")]
+        [SerializeField] private DossierViewBehaviour _dossierView = null;
+
+        [Title("End Game")]
         [SerializeField] private EndGameMenu _endgameViewBehaviour = null;
+
+        [Title("HUD View")]
         [SerializeField] private TimerUI _timer = null;
         [SerializeField] private GameObject _crossHair = null;
         [SerializeField] private LivesViewBehaviour _livesView = null;
 
-        
+        [SerializeField] private GameObject _crossHairText = null;
+
         /// <summary>
         /// Initialize UIManager, setup values here
         /// </summary>
         public void Initialize(int lives)
         {
+            _stateManager.OnStateChanged += HandleOnStateChange;
+
             if (_dossierView != null)
             {
                 _dossierView.Initialize();
                 _dossierView.OnDossierStateChange += HandleOnDossierStateChange;
             }
-            
-            _stateManager.OnStateChanged += HandleOnStateChange;
-            
+
+            if (_pregameDialogueBox != null)
+            {
+                _pregameDialogueBox.Initialize();
+                _pregameDialogueBox.OnDialogueCompleted += HandleOnDialogueCompleted;
+            }
+
             if (_transitionViewBehaviour != null)
             {
                 _transitionViewBehaviour.OnCompleteFade += HandleOnFadeComplete;
@@ -49,9 +67,11 @@ namespace GameJamCat
             {
                 _timer.Initialize();
             }
-
+            _crossHairText.SetActive(false);
             SetLives(lives);
         }
+
+
 
         public void UpdateTimer(float time)
         {
@@ -79,8 +99,8 @@ namespace GameJamCat
             {
                 _livesView.SetLiveImage(lives);
             }
-        }       
-        
+        }
+
         public void SetCrossHairState(bool state)
         {
             if (_crossHair != null)
@@ -105,19 +125,27 @@ namespace GameJamCat
             }
         }
 
+        public void SetCrossHairTextState(bool state)
+        {
+            _crossHairText.SetActive(state);
+        }
+
+
         private void OnDestroy()
         {
             CleanUp();
-        }        
-        
+        }
+
         #region StateChanges
         private void OnPregameSet()
         {
-            if (_transitionViewBehaviour != null) 
-            { 
-                _transitionViewBehaviour.SwitchBlackScreen(true); 
-            }
+#if UNITY_EDITOR
+            HandleOnDialogueCompleted();
+#endif
 
+#if !UNITY_EDITOR
+            _pregameDialogueBox.StartAnimation();
+#endif
             SetCrossHairState(false);
         }
 
@@ -129,7 +157,7 @@ namespace GameJamCat
                 _dossierView.SetPressToOpenCloseText();
             }
         }
-        
+
         private void OnDialogueSet()
         {
             if (_dossierView != null)
@@ -140,10 +168,10 @@ namespace GameJamCat
                     _dossierView.UpdateDossierView();
                     SetCrossHairState(false);
                 }
-            
+
                 _dossierView.SetInstructionLabel(false);
                 _dossierView.SetPressToOpenCloseText();
-            } 
+            }
 
             if(_actionBoxView !=null)
             {
@@ -154,7 +182,7 @@ namespace GameJamCat
                 }
             }
         }
-        
+
         private void OnEndGameSet()
         {
             SetCrossHairState(false);
@@ -165,7 +193,7 @@ namespace GameJamCat
             }
         }
         #endregion
-        
+
         #region Delegate
 
         private void HandleOnStateChange(State state)
@@ -193,11 +221,19 @@ namespace GameJamCat
         {
             _stateManager.SetState(State.Play);
         }
-        
+
         private void HandleOnDossierStateChange(bool isOpen)
         {
             SetCrossHairState(!isOpen);
         }
-        #endregion 
+
+        private void HandleOnDialogueCompleted()
+        {
+            if (_transitionViewBehaviour != null)
+            {
+                _transitionViewBehaviour.SwitchBlackScreen(true);
+            }
+        }
+        #endregion
     }
 }
